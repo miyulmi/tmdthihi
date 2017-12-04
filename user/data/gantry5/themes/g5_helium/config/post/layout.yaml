@@ -1,0 +1,118 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1468340932
+layout:
+  navigation: {  }
+  header: {  }
+  intro: {  }
+  features: {  }
+  utility: {  }
+  above: {  }
+  testimonials: {  }
+  expanded: {  }
+  /container-main/:
+    -
+      -
+        'mainbar 75': {  }
+      -
+        'sidebar 25': {  }
+  footer: {  }
+  offcanvas: {  }
+structure:
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  header:
+    inherit:
+      outline: full_width
+      include:
+        - attributes
+        - block
+        - children
+  intro:
+    type: section
+    inherit:
+      outline: full_width
+      include:
+        - attributes
+        - block
+        - children
+  features:
+    type: section
+    inherit:
+      outline: full_width
+      include:
+        - attributes
+        - block
+        - children
+  utility:
+    type: section
+    inherit:
+      outline: full_width
+      include:
+        - attributes
+        - block
+        - children
+  above:
+    type: section
+    inherit:
+      outline: full_width
+      include:
+        - attributes
+        - block
+        - children
+  testimonials:
+    type: section
+    inherit:
+      outline: full_width
+      include:
+        - attributes
+        - block
+        - children
+  expanded:
+    type: section
+    inherit:
+      outline: full_width
+      include:
+        - attributes
+        - block
+        - children
+  mainbar:
+    type: section
+    subtype: main
+    inherit:
+      outline: full_width
+      include:
+        - attributes
+        - block
+        - children
+  sidebar:
+    type: section
+    subtype: aside
+    inherit:
+      outline: default
+      include:
+        - block
+        - attributes
+        - children
+  container-main:
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - children
+        - attributes
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - children
+        - attributes
