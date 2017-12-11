@@ -348,6 +348,6 @@ class __TwigTemplate_7850bdc11cd7097315720b7b0a92ee2afb51ab24006034c291af29ebccd
 
 {% include 'partials/modal-add-package.html.twig' with { type: 'plugin' } %}
 {% include 'partials/modal-update-packages.html.twig' with { type: 'plugin' } %}
-", "partials/plugins-list.html.twig", "E:\\XAMPP\\htdocs\\tmdthihi\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\plugins-list.html.twig");
+", "partials/plugins-list.html.twig", "D:\\xampp\\htdocs\\tmdthihi\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\plugins-list.html.twig");
     }
 }

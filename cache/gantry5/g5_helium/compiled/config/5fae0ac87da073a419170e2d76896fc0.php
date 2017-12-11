@@ -1,65 +1,65 @@
 <?php
 return [
     '@class' => 'Gantry\\Component\\Config\\CompiledConfig',
-    'timestamp' => 1512357888,
-    'checksum' => 'ded7e68a7e894e2c109a9d418023ce7a',
+    'timestamp' => 1512365547,
+    'checksum' => '4f4264022d2e786b3f0815849e3c3c1f',
     'files' => [
         0 => [
             'block_variations' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/block_variations/assignments.yaml',
-                'modified' => 1508324996
+                'modified' => 1512364778
             ],
             'full_width' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/full_width/assignments.yaml',
-                'modified' => 1508324996
+                'modified' => 1512364778
             ],
             'home_-_particles' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/home_-_particles/assignments.yaml',
-                'modified' => 1512356828
+                'modified' => 1512364778
             ],
             'index' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/index/assignments.yaml',
-                'modified' => 1512356833
+                'modified' => 1512364778
             ],
             'left_sidebar' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/left_sidebar/assignments.yaml',
-                'modified' => 1508324996
+                'modified' => 1512364778
             ],
             'list_homestay' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/list_homestay/assignments.yaml',
-                'modified' => 1512357293
+                'modified' => 1512364778
             ],
             'offline_page' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/offline_page/assignments.yaml',
-                'modified' => 1508324996
+                'modified' => 1512364778
             ],
             'particles' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/particles/assignments.yaml',
-                'modified' => 1508324996
+                'modified' => 1512364778
             ],
             'post' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/post/assignments.yaml',
-                'modified' => 1512357884
+                'modified' => 1512364778
             ],
             'right_sidebar' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/right_sidebar/assignments.yaml',
-                'modified' => 1508324996
+                'modified' => 1512364778
             ],
             'rows_columns' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/rows_columns/assignments.yaml',
-                'modified' => 1508324996
+                'modified' => 1512364778
             ],
             'two_sidebars' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/two_sidebars/assignments.yaml',
-                'modified' => 1508324996
+                'modified' => 1512364778
             ],
             'two_sidebars_left' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/two_sidebars_left/assignments.yaml',
-                'modified' => 1508324996
+                'modified' => 1512364778
             ],
             'two_sidebars_right' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/two_sidebars_right/assignments.yaml',
-                'modified' => 1508324996
+                'modified' => 1512364778
             ]
         ]
     ],

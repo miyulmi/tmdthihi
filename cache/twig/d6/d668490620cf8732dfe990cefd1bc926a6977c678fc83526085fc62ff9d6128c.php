@@ -80,6 +80,6 @@ class __TwigTemplate_49898c339f0b4a57d26b5b1e87c270afbc62ee2f9d1dc184479f3bf138e
             <a class=\"button\" data-leave-action=\"continue\" href=\"#\"><i class=\"fa fa-fw fa-check\"></i> {{ \"PLUGIN_ADMIN.CONTINUE\"|tu }}</a>
         </div>
     </form>
-</div>", "partials/modal-changes-detected.html.twig", "E:\\XAMPP\\htdocs\\tmdthihi\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\modal-changes-detected.html.twig");
+</div>", "partials/modal-changes-detected.html.twig", "D:\\xampp\\htdocs\\tmdthihi\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\modal-changes-detected.html.twig");
     }
 }

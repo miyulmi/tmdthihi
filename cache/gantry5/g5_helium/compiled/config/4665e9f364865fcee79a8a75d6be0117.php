@@ -1,81 +1,85 @@
 <?php
 return [
     '@class' => 'Gantry\\Component\\Config\\CompiledConfig',
-    'timestamp' => 1512357889,
-    'checksum' => 'ed5010dca2400643712b3111152633b4',
+    'timestamp' => 1512988661,
+    'checksum' => '0a89d109c5b4ff269c19be38dcb6c62d',
     'files' => [
         'user/data/gantry5/themes/g5_helium/config/post' => [
             'assignments' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/post/assignments.yaml',
-                'modified' => 1512357884
+                'modified' => 1512364778
             ],
             'index' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/post/index.yaml',
-                'modified' => 1512357789
+                'modified' => 1512988448
             ],
             'layout' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/post/layout.yaml',
-                'modified' => 1512357789
+                'modified' => 1512988448
             ]
         ],
         'user/data/gantry5/themes/g5_helium/config/default' => [
             'index' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/index.yaml',
-                'modified' => 1512356576
+                'modified' => 1512988448
             ],
             'layout' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/layout.yaml',
-                'modified' => 1508324996
+                'modified' => 1512988448
             ],
             'page/body' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/page/body.yaml',
-                'modified' => 1508324996
+                'modified' => 1512364778
             ],
             'particles/branding' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/particles/branding.yaml',
-                'modified' => 1508324996
+                'modified' => 1512364778
             ],
             'particles/copyright' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/particles/copyright.yaml',
-                'modified' => 1508324996
+                'modified' => 1512364778
             ],
             'particles/logo' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/particles/logo.yaml',
-                'modified' => 1508324996
+                'modified' => 1512364778
             ],
             'particles/social' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/particles/social.yaml',
-                'modified' => 1508324996
+                'modified' => 1512364778
             ],
             'particles/totop' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/particles/totop.yaml',
-                'modified' => 1508324996
+                'modified' => 1512364778
+            ],
+            'styles' => [
+                'file' => 'user/data/gantry5/themes/g5_helium/config/default/styles.yaml',
+                'modified' => 1512988659
             ]
         ],
         'user/themes/g5_helium/config/default' => [
             'page/body' => [
                 'file' => 'user/themes/g5_helium/config/default/page/body.yaml',
-                'modified' => 1508307662
+                'modified' => 1512364783
             ],
             'particles/branding' => [
                 'file' => 'user/themes/g5_helium/config/default/particles/branding.yaml',
-                'modified' => 1508307662
+                'modified' => 1512364783
             ],
             'particles/copyright' => [
                 'file' => 'user/themes/g5_helium/config/default/particles/copyright.yaml',
-                'modified' => 1508307662
+                'modified' => 1512364783
             ],
             'particles/logo' => [
                 'file' => 'user/themes/g5_helium/config/default/particles/logo.yaml',
-                'modified' => 1508307662
+                'modified' => 1512364783
             ],
             'particles/social' => [
                 'file' => 'user/themes/g5_helium/config/default/particles/social.yaml',
-                'modified' => 1508307662
+                'modified' => 1512364783
             ],
             'particles/totop' => [
                 'file' => 'user/themes/g5_helium/config/default/particles/totop.yaml',
-                'modified' => 1508307662
+                'modified' => 1512364783
             ]
         ]
     ],
@@ -402,7 +406,7 @@ return [
                 'background' => '#4db2b3',
                 'text-color' => '#eceeef',
                 'toggle-color' => '#4db2b3',
-                'toggle-visibility' => 1,
+                'toggle-visibility' => '1',
                 'width' => '12rem'
             ],
             'testimonials' => [
@@ -414,7 +418,8 @@ return [
             'utility' => [
                 'background' => '#424753',
                 'text-color' => '#ffffff'
-            ]
+            ],
+            'preset' => 'preset1'
         ],
         'page' => [
             'body' => [
@@ -499,13 +504,13 @@ return [
             ]
         ],
         'index' => [
-            'name' => 'default',
-            'timestamp' => 1508324996,
+            'name' => 'post',
+            'timestamp' => 1512988448,
             'version' => 7,
             'preset' => [
                 'image' => 'gantry-admin://images/layouts/default.png',
                 'name' => 'default',
-                'timestamp' => 1475608600
+                'timestamp' => 1468340932
             ],
             'positions' => [
                 'sidebar' => 'Sidebar'
@@ -526,36 +531,59 @@ return [
             ],
             'particles' => [
                 'logo' => [
-                    'logo-9608' => 'Logo / Image',
-                    'logo-9571' => 'Logo / Image'
+                    'logo-2118' => 'Logo / Image',
+                    'logo-1516' => 'Logo / Image'
                 ],
                 'menu' => [
-                    'menu-6409' => 'Menu'
-                ],
-                'social' => [
-                    'social-3171' => 'Social'
-                ],
-                'content' => [
-                    'system-content-1587' => 'Page Content'
+                    'menu-4368' => 'Menu'
                 ],
                 'position' => [
-                    'position-position-3949' => 'Sidebar'
+                    'position-position-4199' => 'Sidebar'
                 ],
                 'copyright' => [
-                    'copyright-1736' => 'Copyright'
+                    'copyright-2373' => 'Copyright'
                 ],
                 'horizontalmenu' => [
-                    'horizontalmenu-9034' => 'Horizontal Menu'
+                    'horizontalmenu-8870' => 'Horizontal Menu'
                 ],
                 'totop' => [
-                    'totop-8670' => 'To Top'
+                    'totop-2242' => 'To Top'
                 ],
                 'mobile-menu' => [
-                    'mobile-menu-5697' => 'Mobile-menu'
+                    'mobile-menu-9487' => 'Mobile-menu'
+                ],
+                'custom' => [
+                    'custom-5314' => 'Header',
+                    'custom-4445' => 'Content'
                 ]
             ],
             'inherit' => [
-                
+                'default' => [
+                    'navigation' => 'navigation',
+                    'sidebar' => 'sidebar',
+                    'footer' => 'footer',
+                    'offcanvas' => 'offcanvas',
+                    'logo-2118' => 'logo-9608',
+                    'menu-4368' => 'menu-6409',
+                    'position-position-4199' => 'position-position-3949',
+                    'logo-1516' => 'logo-9571',
+                    'copyright-2373' => 'copyright-1736',
+                    'horizontalmenu-8870' => 'horizontalmenu-9034',
+                    'totop-2242' => 'totop-8670',
+                    'mobile-menu-9487' => 'mobile-menu-5697'
+                ],
+                'full_width' => [
+                    'header' => 'header',
+                    'intro' => 'intro',
+                    'features' => 'features',
+                    'utility' => 'utility',
+                    'above' => 'above',
+                    'testimonials' => 'testimonials',
+                    'expanded' => 'expanded',
+                    'mainbar' => 'mainbar',
+                    'custom-5314' => 'custom-9029',
+                    'custom-4445' => 'custom-7890'
+                ]
             ]
         ],
         'layout' => [
@@ -749,11 +777,6 @@ return [
             'content' => [
                 'logo-9608' => [
                     'title' => 'Logo / Image'
-                ],
-                'social-3171' => [
-                    'block' => [
-                        'class' => 'g-social-header'
-                    ]
                 ],
                 'position-position-3949' => [
                     'title' => 'Sidebar',

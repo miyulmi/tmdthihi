@@ -1,5 +1,5 @@
 name: list_homestay
-timestamp: 1512357242
+timestamp: 1512988447
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -26,8 +26,6 @@ particles:
     logo-2777: 'Logo / Image'
   menu:
     menu-2188: Menu
-  social:
-    social-8804: Social
   position:
     position-position-2897: Sidebar
   copyright:
@@ -49,7 +47,6 @@ inherit:
     offcanvas: offcanvas
     logo-4939: logo-9608
     menu-2188: menu-6409
-    social-8804: social-3171
     position-position-2897: position-position-3949
     logo-2777: logo-9571
     copyright-2047: copyright-1736

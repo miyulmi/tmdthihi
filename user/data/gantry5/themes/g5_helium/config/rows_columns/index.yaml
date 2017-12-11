@@ -1,5 +1,5 @@
 name: rows_columns
-timestamp: 1508324996
+timestamp: 1512988448
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -51,8 +51,6 @@ particles:
     logo-4952: 'Logo / Image'
   menu:
     menu-3115: Menu
-  social:
-    social-4342: Social
   copyright:
     copyright-3663: Copyright
   horizontalmenu:
@@ -68,7 +66,6 @@ inherit:
     offcanvas: offcanvas
     logo-3379: logo-9608
     menu-3115: menu-6409
-    social-4342: social-3171
     logo-4952: logo-9571
     copyright-3663: copyright-1736
     horizontalmenu-6421: horizontalmenu-9034

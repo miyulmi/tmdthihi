@@ -88,6 +88,6 @@ class __TwigTemplate_e789f626a90a42e29e2e0f99f878b81234649ea0aa859bf142915a19b1c
         </div>
     </a>
 </div>
-", "partials/nav-user-details.html.twig", "E:\\XAMPP\\htdocs\\tmdthihi\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\nav-user-details.html.twig");
+", "partials/nav-user-details.html.twig", "D:\\xampp\\htdocs\\tmdthihi\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\nav-user-details.html.twig");
     }
 }

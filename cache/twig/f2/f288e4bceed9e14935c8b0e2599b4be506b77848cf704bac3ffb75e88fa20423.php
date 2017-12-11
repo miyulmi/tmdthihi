@@ -173,6 +173,6 @@ class __TwigTemplate_4d73b8addc723d14792c3c44d3f6206300cd74499d0ec2818114d13901f
         </div>
     </form>
 </div>
-", "partials/modal-remove-package.html.twig", "E:\\XAMPP\\htdocs\\tmdthihi\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\modal-remove-package.html.twig");
+", "partials/modal-remove-package.html.twig", "D:\\xampp\\htdocs\\tmdthihi\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\modal-remove-package.html.twig");
     }
 }

@@ -1,5 +1,5 @@
 name: two_sidebars_left
-timestamp: 1508324996
+timestamp: 1512988448
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -33,8 +33,6 @@ particles:
     logo-5400: 'Logo / Image'
   menu:
     menu-7832: Menu
-  social:
-    social-4649: Social
   copyright:
     copyright-1479: Copyright
   horizontalmenu:
@@ -50,7 +48,6 @@ inherit:
     offcanvas: offcanvas
     logo-2768: logo-9608
     menu-7832: menu-6409
-    social-4649: social-3171
     logo-5400: logo-9571
     copyright-1479: copyright-1736
     horizontalmenu-3533: horizontalmenu-9034

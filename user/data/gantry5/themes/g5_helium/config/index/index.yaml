@@ -1,5 +1,5 @@
 name: index
-timestamp: 1512356776
+timestamp: 1512988447
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -42,7 +42,6 @@ particles:
 inherit:
   full_width:
     header: header
-    custom-9790: custom-9029
     intro: intro
     features: features
     utility: utility
@@ -50,14 +49,15 @@ inherit:
     testimonials: testimonials
     expanded: expanded
     mainbar: mainbar
+    custom-9790: custom-9029
     custom-8653: custom-7890
   default:
     sidebar: sidebar
-    position-position-1815: position-position-3949
     footer: footer
+    offcanvas: offcanvas
+    position-position-1815: position-position-3949
     logo-9015: logo-9571
     copyright-9355: copyright-1736
     horizontalmenu-4206: horizontalmenu-9034
     totop-2129: totop-8670
-    offcanvas: offcanvas
     mobile-menu-1783: mobile-menu-5697

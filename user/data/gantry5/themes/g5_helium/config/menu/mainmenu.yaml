@@ -2,12 +2,39 @@ settings:
   title: Mainmenu
 ordering:
   home: ''
+  danh-sach-homestay: ''
+  dang-bai: ''
+  nguoi-dung:
+    dang-nhap: ''
+    ho-so: ''
+    dang-ky: ''
 items:
   home:
     enabled: '1'
     dropdown_dir: right
     dropdown_hide: '0'
     width: auto
+    anchor_class: ''
+  danh-sach-homestay:
+    enabled: true
+    anchor_class: ''
+  dang-bai:
+    enabled: true
+    anchor_class: ''
+  nguoi-dung:
+    columns:
+      - 100
+    enabled: true
+    anchor_class: ''
+  nguoi-dung/dang-ky:
+    enabled: true
+    anchor_class: ''
+  nguoi-dung/dang-nhap:
+    enabled: true
+    anchor_class: ''
+  nguoi-dung/ho-so:
+    enabled: true
+    anchor_class: ''
   styles/__particle-2IjaB:
     type: particle
     particle: custom

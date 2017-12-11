@@ -64,6 +64,6 @@ class __TwigTemplate_043e1d67165f594b8858ce26eb2baf52dbb21225db8674539006c7fc2e7
 {% block content %}
     {{ content|raw }}
 {% endblock %}
-", "gantry.html.twig", "E:\\XAMPP\\htdocs\\tmdthihi\\user\\plugins\\gantry5\\templates\\gantry.html.twig");
+", "gantry.html.twig", "D:\\xampp\\htdocs\\tmdthihi\\user\\plugins\\gantry5\\templates\\gantry.html.twig");
     }
 }

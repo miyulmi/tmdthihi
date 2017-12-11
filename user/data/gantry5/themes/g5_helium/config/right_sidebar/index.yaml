@@ -1,5 +1,5 @@
 name: right_sidebar
-timestamp: 1508324996
+timestamp: 1512988448
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -30,8 +30,6 @@ particles:
     logo-1301: 'Logo / Image'
   menu:
     menu-2236: Menu
-  social:
-    social-5426: Social
   copyright:
     copyright-2232: Copyright
   horizontalmenu:
@@ -47,7 +45,6 @@ inherit:
     offcanvas: offcanvas
     logo-9853: logo-9608
     menu-2236: menu-6409
-    social-5426: social-3171
     logo-1301: logo-9571
     copyright-2232: copyright-1736
     horizontalmenu-7662: horizontalmenu-9034

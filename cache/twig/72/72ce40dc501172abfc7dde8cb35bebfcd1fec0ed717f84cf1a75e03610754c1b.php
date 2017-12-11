@@ -48,6 +48,6 @@ class __TwigTemplate_cbf76a7753f24c8861bd57f05d5be7302b8cf290facf9cbe7ca6b72c8d7
     public function getSourceContext()
     {
         return new Twig_Source("<img src=\"{{ admin.user.avatarUrl() }}?s=47\" />
-", "partials/nav-user-avatar.html.twig", "E:\\XAMPP\\htdocs\\tmdthihi\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\nav-user-avatar.html.twig");
+", "partials/nav-user-avatar.html.twig", "D:\\xampp\\htdocs\\tmdthihi\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\nav-user-avatar.html.twig");
     }
 }

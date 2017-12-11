@@ -142,6 +142,6 @@ class __TwigTemplate_27c0be33640d5624e4df8c355b7f4026acf834aeac4ba565c86c035bce2
         <button class=\"button primary\" name=\"task\" value=\"save\">{{ \"PLUGIN_ADMIN.CONTINUE\"|tu }}</button>
     </div>
 </form>
-", "partials/page-move.html.twig", "E:\\XAMPP\\htdocs\\tmdthihi\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\page-move.html.twig");
+", "partials/page-move.html.twig", "D:\\xampp\\htdocs\\tmdthihi\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\page-move.html.twig");
     }
 }

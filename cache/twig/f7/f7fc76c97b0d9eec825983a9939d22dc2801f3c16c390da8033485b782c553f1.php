@@ -281,6 +281,6 @@ class __TwigTemplate_088150f2bcd43c48e871132759f9b3c50240778ff8c81a8b4bdffb3196f
     {% endif %}
 
 </table>
-", "partials/plugin-data.html.twig", "E:\\XAMPP\\htdocs\\tmdthihi\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\plugin-data.html.twig");
+", "partials/plugin-data.html.twig", "D:\\xampp\\htdocs\\tmdthihi\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\plugin-data.html.twig");
     }
 }

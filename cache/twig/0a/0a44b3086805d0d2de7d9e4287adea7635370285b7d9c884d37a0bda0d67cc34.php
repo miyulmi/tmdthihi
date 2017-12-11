@@ -142,6 +142,6 @@ class __TwigTemplate_91f307495783bba575e0054a23008518395093fe7cf3d31e5da401443ba
     {% endfor %}
     </ul>
 {% endif %}
-", "partials/nav-quick-tray.html.twig", "E:\\XAMPP\\htdocs\\tmdthihi\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\nav-quick-tray.html.twig");
+", "partials/nav-quick-tray.html.twig", "D:\\xampp\\htdocs\\tmdthihi\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\nav-quick-tray.html.twig");
     }
 }

@@ -1,5 +1,5 @@
 name: default
-timestamp: 1508324996
+timestamp: 1512988448
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -26,8 +26,6 @@ particles:
     logo-9571: 'Logo / Image'
   menu:
     menu-6409: Menu
-  social:
-    social-3171: Social
   content:
     system-content-1587: 'Page Content'
   position:

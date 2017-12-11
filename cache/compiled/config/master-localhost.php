@@ -1,93 +1,97 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1512356288,
-    'checksum' => 'd1501047fd2472d401dfa948200c9cf6',
+    'timestamp' => 1512986590,
+    'checksum' => '55dd424ea597f6a6ed9f1d0fe9022d9a',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
-                'modified' => 1512355396
+                'modified' => 1512364778
             ],
             'plugins/email' => [
                 'file' => 'user/config/plugins/email.yaml',
-                'modified' => 1508324996
+                'modified' => 1512986590
+            ],
+            'plugins/login' => [
+                'file' => 'user/config/plugins/login.yaml',
+                'modified' => 1512985411
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
-                'modified' => 1512355394
+                'modified' => 1512364778
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1507771734
+                'modified' => 1512364778
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
-                'modified' => 1512355396
+                'modified' => 1512364778
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1512356288
+                'modified' => 1512364778
             ]
         ],
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1507771734
+                'modified' => 1512364777
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1507771734
+                'modified' => 1512364777
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1507771734
+                'modified' => 1512364777
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1507771734
+                'modified' => 1512364777
             ]
         ],
         'user/plugins' => [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1508325000
+                'modified' => 1512364779
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1508325002
+                'modified' => 1512364781
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
-                'modified' => 1507771736
+                'modified' => 1512364781
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1508325006
+                'modified' => 1512364781
             ],
             'plugins/gantry5' => [
                 'file' => 'user/plugins/gantry5/gantry5.yaml',
-                'modified' => 1508307660
+                'modified' => 1512364782
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1508325008
+                'modified' => 1512364783
             ],
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/markdown-notices.yaml',
-                'modified' => 1507771736
+                'modified' => 1512364783
             ],
             'plugins/pagination' => [
                 'file' => 'user/plugins/pagination/pagination.yaml',
-                'modified' => 1508325010
+                'modified' => 1512364783
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
-                'modified' => 1507771736
+                'modified' => 1512364783
             ],
             'plugins/simplesearch' => [
                 'file' => 'user/plugins/simplesearch/simplesearch.yaml',
-                'modified' => 1508325008
+                'modified' => 1512364783
             ]
         ]
     ],
@@ -153,25 +157,25 @@ return [
             ],
             'email' => [
                 'enabled' => true,
-                'from' => 'mail@example.com',
+                'from' => 'phannuthoaimy.sb@gmail.com',
                 'from_name' => NULL,
-                'to' => 'mail@example.com',
+                'to' => 'phannuthoaimy.sb@gmail.com',
                 'to_name' => NULL,
                 'mailer' => [
-                    'engine' => 'none',
+                    'engine' => 'smtp',
                     'smtp' => [
-                        'server' => 'localhost',
-                        'port' => 25,
-                        'encryption' => 'none',
-                        'user' => '',
-                        'password' => ''
+                        'server' => 'smtp.gmail.com',
+                        'port' => 587,
+                        'encryption' => 'tls',
+                        'user' => 'phannuthoaimy.sb@gmail.com',
+                        'password' => 'Chetchac123'
                     ],
                     'sendmail' => [
                         'bin' => '/usr/sbin/sendmail'
                     ]
                 ],
                 'content_type' => 'text/html',
-                'debug' => false
+                'debug' => true
             ],
             'error' => [
                 'enabled' => true,
@@ -209,17 +213,17 @@ return [
             'login' => [
                 'enabled' => true,
                 'built_in_css' => true,
-                'route' => NULL,
+                'route' => '/login',
                 'redirect_to_login' => true,
-                'redirect_after_login' => NULL,
+                'redirect_after_login' => '/',
                 'route_activate' => '/activate_user',
                 'route_forgot' => '/forgot_password',
                 'route_reset' => '/reset_password',
                 'route_profile' => '/user_profile',
                 'route_register' => '/user_register',
                 'route_unauthorized' => '/user_unauthorized',
-                'parent_acl' => false,
-                'protect_protected_page_media' => false,
+                'parent_acl' => true,
+                'protect_protected_page_media' => true,
                 'user_registration' => [
                     'enabled' => true,
                     'fields' => [
@@ -240,7 +244,7 @@ return [
                         'login_after_registration' => true,
                         'send_activation_email' => false,
                         'send_notification_email' => false,
-                        'send_welcome_email' => false
+                        'send_welcome_email' => '0'
                     ]
                 ],
                 'rememberme' => [

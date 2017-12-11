@@ -6,8 +6,8 @@ preset:
 layout:
   /navigation/:
     -
-      - 'logo-9608 25'
-      - 'menu-6409 75'
+      - 'logo-9608 20'
+      - 'menu-6409 80'
   /header/:
     -
       - owlcarousel-2455

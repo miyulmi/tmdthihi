@@ -1,5 +1,5 @@
 name: block_variations
-timestamp: 1508324996
+timestamp: 1512988446
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -51,8 +51,6 @@ particles:
     logo-7038: 'Logo / Image'
   menu:
     menu-5190: Menu
-  social:
-    social-5921: Social
   position:
     position-position-7023: Sidebar
   copyright:
@@ -80,7 +78,6 @@ inherit:
     offcanvas: offcanvas
     logo-6485: logo-9608
     menu-5190: menu-6409
-    social-5921: social-3171
     position-position-7023: position-position-3949
     logo-7038: logo-9571
     copyright-7473: copyright-1736

@@ -261,6 +261,6 @@ class __TwigTemplate_2077562ef3f8fbf3d2e50d50cb3a1f5e0cfc394a16272ea1cddc053de74
 {% include 'partials/modal-update-packages.html.twig' with { type: 'plugin' } %}
 {% include 'partials/modal-remove-package.html.twig' with { type: 'plugin', package: plugin } %}
 {% include 'partials/modal-reinstall-package.html.twig' with { type: 'plugin', package: plugin } %}
-", "partials/plugins-details.html.twig", "E:\\XAMPP\\htdocs\\tmdthihi\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\plugins-details.html.twig");
+", "partials/plugins-details.html.twig", "D:\\xampp\\htdocs\\tmdthihi\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\plugins-details.html.twig");
     }
 }

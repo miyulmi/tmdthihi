@@ -1,81 +1,85 @@
 <?php
 return [
     '@class' => 'Gantry\\Component\\Config\\CompiledConfig',
-    'timestamp' => 1512356779,
-    'checksum' => '2bd6af5156655f3f5b658bcfa3933e29',
+    'timestamp' => 1512988663,
+    'checksum' => '202b7a8e458971ae9980d2f9e0a7f0c8',
     'files' => [
         'user/data/gantry5/themes/g5_helium/config/index' => [
             'assignments' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/index/assignments.yaml',
-                'modified' => 1512356767
+                'modified' => 1512364778
             ],
             'index' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/index/index.yaml',
-                'modified' => 1512356776
+                'modified' => 1512988447
             ],
             'layout' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/index/layout.yaml',
-                'modified' => 1512356776
+                'modified' => 1512988447
             ]
         ],
         'user/data/gantry5/themes/g5_helium/config/default' => [
             'index' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/index.yaml',
-                'modified' => 1512356576
+                'modified' => 1512988448
             ],
             'layout' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/layout.yaml',
-                'modified' => 1508324996
+                'modified' => 1512988448
             ],
             'page/body' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/page/body.yaml',
-                'modified' => 1508324996
+                'modified' => 1512364778
             ],
             'particles/branding' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/particles/branding.yaml',
-                'modified' => 1508324996
+                'modified' => 1512364778
             ],
             'particles/copyright' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/particles/copyright.yaml',
-                'modified' => 1508324996
+                'modified' => 1512364778
             ],
             'particles/logo' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/particles/logo.yaml',
-                'modified' => 1508324996
+                'modified' => 1512364778
             ],
             'particles/social' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/particles/social.yaml',
-                'modified' => 1508324996
+                'modified' => 1512364778
             ],
             'particles/totop' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/particles/totop.yaml',
-                'modified' => 1508324996
+                'modified' => 1512364778
+            ],
+            'styles' => [
+                'file' => 'user/data/gantry5/themes/g5_helium/config/default/styles.yaml',
+                'modified' => 1512988659
             ]
         ],
         'user/themes/g5_helium/config/default' => [
             'page/body' => [
                 'file' => 'user/themes/g5_helium/config/default/page/body.yaml',
-                'modified' => 1508307662
+                'modified' => 1512364783
             ],
             'particles/branding' => [
                 'file' => 'user/themes/g5_helium/config/default/particles/branding.yaml',
-                'modified' => 1508307662
+                'modified' => 1512364783
             ],
             'particles/copyright' => [
                 'file' => 'user/themes/g5_helium/config/default/particles/copyright.yaml',
-                'modified' => 1508307662
+                'modified' => 1512364783
             ],
             'particles/logo' => [
                 'file' => 'user/themes/g5_helium/config/default/particles/logo.yaml',
-                'modified' => 1508307662
+                'modified' => 1512364783
             ],
             'particles/social' => [
                 'file' => 'user/themes/g5_helium/config/default/particles/social.yaml',
-                'modified' => 1508307662
+                'modified' => 1512364783
             ],
             'particles/totop' => [
                 'file' => 'user/themes/g5_helium/config/default/particles/totop.yaml',
-                'modified' => 1508307662
+                'modified' => 1512364783
             ]
         ]
     ],
@@ -402,7 +406,7 @@ return [
                 'background' => '#4db2b3',
                 'text-color' => '#eceeef',
                 'toggle-color' => '#4db2b3',
-                'toggle-visibility' => 1,
+                'toggle-visibility' => '1',
                 'width' => '12rem'
             ],
             'testimonials' => [
@@ -414,7 +418,8 @@ return [
             'utility' => [
                 'background' => '#424753',
                 'text-color' => '#ffffff'
-            ]
+            ],
+            'preset' => 'preset1'
         ],
         'page' => [
             'body' => [
@@ -500,7 +505,7 @@ return [
         ],
         'index' => [
             'name' => 'index',
-            'timestamp' => 1512356776,
+            'timestamp' => 1512988447,
             'version' => 7,
             'preset' => [
                 'image' => 'gantry-admin://images/layouts/default.png',
@@ -555,7 +560,6 @@ return [
             'inherit' => [
                 'full_width' => [
                     'header' => 'header',
-                    'custom-9790' => 'custom-9029',
                     'intro' => 'intro',
                     'features' => 'features',
                     'utility' => 'utility',
@@ -563,17 +567,18 @@ return [
                     'testimonials' => 'testimonials',
                     'expanded' => 'expanded',
                     'mainbar' => 'mainbar',
+                    'custom-9790' => 'custom-9029',
                     'custom-8653' => 'custom-7890'
                 ],
                 'default' => [
                     'sidebar' => 'sidebar',
-                    'position-position-1815' => 'position-position-3949',
                     'footer' => 'footer',
+                    'offcanvas' => 'offcanvas',
+                    'position-position-1815' => 'position-position-3949',
                     'logo-9015' => 'logo-9571',
                     'copyright-9355' => 'copyright-1736',
                     'horizontalmenu-4206' => 'horizontalmenu-9034',
                     'totop-2129' => 'totop-8670',
-                    'offcanvas' => 'offcanvas',
                     'mobile-menu-1783' => 'mobile-menu-5697'
                 ]
             ]
@@ -774,9 +779,7 @@ return [
         ],
         'assignments' => [
             'page' => [
-                0 => [
-                    'home' => true
-                ]
+                
             ],
             'language' => [
                 

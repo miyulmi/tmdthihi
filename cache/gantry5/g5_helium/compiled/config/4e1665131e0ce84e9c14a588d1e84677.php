@@ -1,21 +1,25 @@
 <?php
 return [
     '@class' => 'Gantry\\Component\\Config\\CompiledConfig',
-    'timestamp' => 1512357349,
-    'checksum' => 'a2d9274e0f9ec904e7224a98f86013e4',
+    'timestamp' => 1512988805,
+    'checksum' => 'a0cf46d9081272180e30f1bcaee896be',
     'files' => [
         'user/data/gantry5/themes/g5_helium/config/home_-_particles' => [
             'assignments' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/home_-_particles/assignments.yaml',
-                'modified' => 1512356828
+                'modified' => 1512364778
             ],
             'index' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/home_-_particles/index.yaml',
-                'modified' => 1512356912
+                'modified' => 1512988447
             ],
             'layout' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/home_-_particles/layout.yaml',
-                'modified' => 1512356912
+                'modified' => 1512988447
+            ],
+            'styles' => [
+                'file' => 'user/data/gantry5/themes/g5_helium/config/home_-_particles/styles.yaml',
+                'modified' => 1512988642
             ]
         ]
     ],
@@ -35,7 +39,7 @@ return [
         ],
         'index' => [
             'name' => 'home_-_particles',
-            'timestamp' => 1512356912,
+            'timestamp' => 1512988447,
             'version' => 7,
             'preset' => [
                 'image' => 'gantry-admin://images/layouts/default.png',
@@ -66,6 +70,9 @@ return [
                 ],
                 'menu' => [
                     'menu-6409' => 'Menu'
+                ],
+                'social' => [
+                    'social-1705' => 'Social'
                 ],
                 'owlcarousel' => [
                     'owlcarousel-2455' => 'Owl Carousel'
@@ -98,11 +105,11 @@ return [
             'inherit' => [
                 'default' => [
                     'footer' => 'footer',
+                    'offcanvas' => 'offcanvas',
                     'logo-6231' => 'logo-9571',
                     'copyright-5116' => 'copyright-1736',
                     'horizontalmenu-9937' => 'horizontalmenu-9034',
                     'totop-5629' => 'totop-8670',
-                    'offcanvas' => 'offcanvas',
                     'mobile-menu-1622' => 'mobile-menu-5697'
                 ]
             ]
@@ -117,8 +124,9 @@ return [
             'layout' => [
                 '/navigation/' => [
                     0 => [
-                        0 => 'logo-9608 25',
-                        1 => 'menu-6409 75'
+                        0 => 'logo-9608 34',
+                        1 => 'menu-6409 43',
+                        2 => 'social-1705 23'
                     ]
                 ],
                 '/header/' => [
@@ -263,6 +271,23 @@ return [
             'content' => [
                 'logo-9608' => [
                     'title' => 'Logo / Image'
+                ],
+                'social-1705' => [
+                    'attributes' => [
+                        'css' => [
+                            'class' => ''
+                        ],
+                        'title' => '',
+                        'target' => '_parent',
+                        'items' => [
+                            0 => [
+                                'icon' => 'fa fa-user',
+                                'text' => 'Đăng nhập',
+                                'link' => 'http://localhost:81/tmdthihi/login',
+                                'name' => 'Login'
+                            ]
+                        ]
+                    ]
                 ],
                 'owlcarousel-2455' => [
                     'title' => 'Owl Carousel',
@@ -530,6 +555,15 @@ a handful of things you can do with Gantry 5’s powerful Menu Editor.</p>
                         'variations' => 'title-center'
                     ]
                 ]
+            ]
+        ],
+        'styles' => [
+            'preset' => 'preset1',
+            'navigation' => [
+                'background' => '#312f38'
+            ],
+            'header' => [
+                'background' => '#312f38'
             ]
         ]
     ]

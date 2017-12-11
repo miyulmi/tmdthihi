@@ -94,6 +94,6 @@ class __TwigTemplate_542e9e73b2f710f276af01f6e8d1d41527252a1be3e420e1ffb5324b442
     {% do assets.addCss(theme_url~'/css/nucleus-ie9.css') %}
     {% do assets.addCss(theme_url~'/css/pure-0.5.0/grids-min.css') %}
 {% endif %}
-", "partials/stylesheets.html.twig", "E:\\XAMPP\\htdocs\\tmdthihi\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\stylesheets.html.twig");
+", "partials/stylesheets.html.twig", "D:\\xampp\\htdocs\\tmdthihi\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\stylesheets.html.twig");
     }
 }

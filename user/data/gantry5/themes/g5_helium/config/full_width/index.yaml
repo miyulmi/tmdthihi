@@ -1,5 +1,5 @@
 name: full_width
-timestamp: 1508324996
+timestamp: 1512988446
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -29,8 +29,6 @@ particles:
     logo-1291: 'Logo / Image'
   menu:
     menu-6059: Menu
-  social:
-    social-8619: Social
   position:
     position-position-4882: Sidebar
   copyright:
@@ -49,7 +47,6 @@ inherit:
     offcanvas: offcanvas
     logo-1212: logo-9608
     menu-6059: menu-6409
-    social-8619: social-3171
     position-position-4882: position-position-3949
     logo-1291: logo-9571
     copyright-3813: copyright-1736

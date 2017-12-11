@@ -1,7 +1,7 @@
 ---
 title: Login
 
-login_redirect_here: false
+login_redirect_here: true
 
 form:
     name: login
