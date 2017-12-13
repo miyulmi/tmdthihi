@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledLanguages',
-    'timestamp' => 1513140370,
-    'checksum' => '2beaa13695ea9536fa0ab5759c0e9d29',
+    'timestamp' => 1513141724,
+    'checksum' => '64539981b086b803faf1168fee1feda5',
     'files' => [
         'system/languages' => [
             'ar' => [
@@ -119,6 +119,10 @@ return [
             ]
         ],
         'user/plugins' => [
+            'plugins/blog-injector' => [
+                'file' => 'user/plugins/blog-injector/languages.yaml',
+                'modified' => 1513141695
+            ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/languages.yaml',
                 'modified' => 1513083622
@@ -134,6 +138,10 @@ return [
             'plugins/login' => [
                 'file' => 'user/plugins/login/languages.yaml',
                 'modified' => 1513083627
+            ],
+            'plugins/relatedpages' => [
+                'file' => 'user/plugins/relatedpages/languages.yaml',
+                'modified' => 1513141704
             ],
             'plugins/simplesearch' => [
                 'file' => 'user/plugins/simplesearch/languages.yaml',
@@ -4147,6 +4155,37 @@ Sti: `%2$s`
                 'EMAIL_VALIDATION_MESSAGE' => 'Muss eine gültige E-Mail Adresse sein',
                 'WELCOME' => 'Willkommen'
             ],
+            'PLUGIN_REL_PAGES' => [
+                'PLUGIN_STATUS' => 'Plugin-Status',
+                'BASICS' => 'Grundeinstellungen',
+                'LIMIT' => 'Angezeigt',
+                'LIMIT_HELP' => 'Die Anzahl der angezeigten verwandten Seiten',
+                'ORDER' => 'Reihenfolge',
+                'ORDER_BY' => 'Sortiert nach',
+                'SHOW_SCORE' => 'Zeige Bewertung',
+                'SHOW_SCORE_HELP' => 'Umschalter, ob die Bewertung in der Ausgabe angezeigt werden soll',
+                'ITEMS' => 'Elemente',
+                'ITEMS_HELP' => 'Unterstützt `@self`, `@page`, und `@taxonomy` basierte Sammlungen (collections)',
+                'PAGE_IN_FILTER' => 'Seite \'drin\' Filter',
+                'PAGE_IN_FILTER_HELP' => 'Aktiviert, wenn die aktuelle Seite in der gefilterten Sammlung (collection) enthalten sein muss',
+                'EXPLICIT_PROCESS' => 'Verarbeite explizite Seiten',
+                'EXPLICIT_PROCESS_HELP' => 'Aktiviere diesen Abgleich der expliziten Seiten',
+                'EXPLICIT_SCORE' => 'Bewertung der expliziten Seiten',
+                'EXPLICIT_SCORE_HELP' => 'Eine Bewertung von (0 - 100) um expliziten Seiten eine Gewichtung zu geben',
+                'TAXONOMY_MATCH' => 'Abgleich der Taxonomie-Typen',
+                'TAXONOMY' => 'Taxonomie',
+                'TAXONOMY_HELP' => 'Welcher Taxonomie-Typ soll für den Seiten-Abgleich genutzt werden',
+                'TAXONOMY_TAXONOMY_PROCESS' => 'Taxonomie-Taxonomie',
+                'TAXONOMY_TAXONOMY_PROCESS_HELP' => 'Aktiviere die Taxonomie für den Taxonomie-Abgleich',
+                'TAXONOMY_CONTENT_PROCESS' => 'Taxonomie-Inhalt',
+                'TAXONOMY_CONTENT_PROCESS_HELP' => 'Aktiviere die Taxonomie für den Inhalts-Abgleich',
+                'CONTENT_MATCH' => 'Abgleich der Inhalts-Typen',
+                'CONTENT_PROCESS' => 'Inhalt-Inhalt',
+                'CONTENT_PROCESS_HELP' => 'Aktiviere den Inhalt-zu-Inhalt-Abgleich (Beachte: Deaktivieren bei viel Inhalt)',
+                'ADVANCED' => 'Erweitert',
+                'TAXONOMY_SCORE_SCALE' => 'Taxonomie-Taxonomie Bewertungsskala',
+                'CONTENT_SCORE_SCALE' => 'Taxonomie-Inhalt Bewertungsskala'
+            ],
             'PLUGIN_SIMPLESEARCH' => [
                 'SEARCH_PLACEHOLDER' => 'Suche...',
                 'SEARCH_RESULTS' => 'Suchergebnisse',
@@ -5320,6 +5359,34 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'CASE_INSENSITIVE_URLS' => 'Case Insensitive URLs',
                 'CASE_INSENSITIVE_URLS_HELP' => 'Enables Grav routing to locate resources regardless of text case.'
             ],
+            'PLUGIN_BLOG_INJECTOR' => [
+                'TEMPLATES' => [
+                    'CONTINUE_READING' => 'Continue Reading...',
+                    'PREVIOUS_POST' => 'Previous Post',
+                    'NEXT_POST' => 'Next Post',
+                    'SEARCH_TITLE' => 'Search',
+                    'POPULAR_TAGS' => 'Popular Tags',
+                    'RELATED_POSTS' => 'Related Posts',
+                    'TOPIC_TAGS' => 'Topic Tags',
+                    'RANDOM_ARTICLE' => 'Random Article',
+                    'FEEL_LUCKY' => 'I\'m Feeling Lucky!',
+                    'ARCHIVES' => 'Archives',
+                    'SYNDICATE' => 'Syndicate',
+                    'ATOM' => 'Atom 1.0',
+                    'RSS' => 'RSS'
+                ],
+                'ADMIN' => [
+                    'PLUGIN_STATUS' => 'Plugin status',
+                    'FRAMEWORK' => 'Framework',
+                    'DEFAULT_STYLESHEET' => 'Add default stylesheet',
+                    'FRAMEWORK_ASSETS' => 'Add framework assets',
+                    'HELP' => [
+                        'FRAMEWORK' => 'Choose the framework to use',
+                        'DEFAULT_STYLESHEET' => 'Automatically adds the included blog stylesheet according to the selected framework, when true',
+                        'FRAMEWORK_ASSETS' => 'Automatically adds selected framework assets, when true'
+                    ]
+                ]
+            ],
             'PLUGIN_EMAIL' => [
                 'EMAIL_NOT_CONFIGURED' => 'Email not configured',
                 'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Please configure a \'to\' address in the Email Plugin settings, or in the form',
@@ -5479,6 +5546,36 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'ROUTE_RESET' => 'Reset password route',
                 'ROUTE_PROFILE' => 'User profile route',
                 'ROUTE_ACTIVATE' => 'User activation route'
+            ],
+            'PLUGIN_REL_PAGES' => [
+                'BASICS' => 'Basic Settings',
+                'LIMIT' => 'Limit',
+                'LIMIT_HELP' => 'The number of related pages to display',
+                'ORDER' => 'Order',
+                'ORDER_BY' => 'Ordery by',
+                'SHOW_SCORE' => 'Show score',
+                'SHOW_SCORE_HELP' => 'Toggle to determine if scores should be displayed in output',
+                'ITEMS' => 'Items',
+                'ITEMS_HELP' => 'Supports `@self`, `@page`, and `@taxonomy` based collections',
+                'PAGE_IN_FILTER' => 'Page \'in\' filter',
+                'PAGE_IN_FILTER_HELP' => 'Enabled if the current page must be in the filtered collection',
+                'EXPLICIT_PROCESS' => 'Process explicit pages',
+                'EXPLICIT_PROCESS_HELP' => 'Enable this explicit page matching',
+                'EXPLICIT_SCORE' => 'Explicit page score',
+                'EXPLICIT_SCORE_HELP' => 'A score ranging from (0 - 100) to give explicit pages a weight',
+                'TAXONOMY_MATCH' => 'Taxonomy Type Matching',
+                'TAXONOMY' => 'Taxonomy',
+                'TAXONOMY_HELP' => 'Which taxonomy type to use for page matching',
+                'TAXONOMY_TAXONOMY_PROCESS' => 'Taxonomy-taxonomy',
+                'TAXONOMY_TAXONOMY_PROCESS_HELP' => 'Enable taxonomy to taxonomy matching',
+                'TAXONOMY_CONTENT_PROCESS' => 'Taxonomy-content',
+                'TAXONOMY_CONTENT_PROCESS_HELP' => 'Enable taxonomy to Content matching',
+                'CONTENT_MATCH' => 'Content Type Matching',
+                'CONTENT_PROCESS' => 'Content-content',
+                'CONTENT_PROCESS_HELP' => 'Enable content to content matching (NOTE: Disable if you have lots of content)',
+                'ADVANCED' => 'Advanced',
+                'TAXONOMY_SCORE_SCALE' => 'Taxonomy-taxonomy score scale',
+                'CONTENT_SCORE_SCALE' => 'Taxonomy-content score scale'
             ],
             'PLUGIN_SIMPLESEARCH' => [
                 'SEARCH_PLACEHOLDER' => 'Search...',
@@ -7631,6 +7728,34 @@ Ruta: `%2$s`
                 'NEVER_CACHE_TWIG' => 'Ne jamais mettre en cache Twig',
                 'ALLOW_WEBSERVER_GZIP' => 'Autorisé Gzip WebServer'
             ],
+            'PLUGIN_BLOG_INJECTOR' => [
+                'TEMPLATES' => [
+                    'CONTINUE_READING' => 'Continuer la lecture...',
+                    'PREVIOUS_POST' => 'Post précédent',
+                    'NEXT_POST' => 'Post suivant',
+                    'SEARCH_TITLE' => 'Rechercher',
+                    'POPULAR_TAGS' => 'Tags populaires',
+                    'RELATED_POSTS' => 'Posts en relation',
+                    'TOPIC_TAGS' => 'Tags de thème',
+                    'RANDOM_ARTICLE' => 'Article aléatoire',
+                    'FEEL_LUCKY' => 'J\'ai de la chance !',
+                    'ARCHIVES' => 'Archives',
+                    'SYNDICATE' => 'Flux',
+                    'ATOM' => 'Atom 1.0',
+                    'RSS' => 'RSS'
+                ],
+                'ADMIN' => [
+                    'PLUGIN_STATUS' => 'Statut du plugin',
+                    'FRAMEWORK' => 'Framework',
+                    'DEFAULT_STYLESHEET' => 'Ajouter les feuilles de style par défaut',
+                    'FRAMEWORK_ASSETS' => 'Ajouter les éléments du framework',
+                    'HELP' => [
+                        'FRAMEWORK' => 'Choisir le framework à utiliser',
+                        'DEFAULT_STYLESHEET' => 'Ajoute automatiquement les feuilles de style de blog en fonction du framework choisi, lorsque défini sur true',
+                        'FRAMEWORK_ASSETS' => 'Ajoute automatiquement les éléments du framework sélectionné, lorsque défini sur true'
+                    ]
+                ]
+            ],
             'PLUGIN_EMAIL' => [
                 'EMAIL_NOT_CONFIGURED' => 'L’e-mail n’est pas configuré',
                 'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Veuillez configurer une adresse de \'destinataire\' dans les paramètres du Plugin ou dans le formulaire.',
@@ -7766,6 +7891,36 @@ Ruta: `%2$s`
                 'USE_PARENT_ACL_HELP' => 'Utiliser les règles d’accès parentes si aucune règle n’a été définie',
                 'PROTECT_PROTECTED_PAGE_MEDIA_LABEL' => 'Protéger le média d\'une page par une protection par connexion',
                 'PROTECT_PROTECTED_PAGE_MEDIA_HELP' => 'Si activé, les médias d\'une page protégée par connexion sera également protégé par un système de connexion et ne pourra pas être visible à moins d\'être connecté.'
+            ],
+            'PLUGIN_REL_PAGES' => [
+                'BASICS' => 'Réglages de base',
+                'LIMIT' => 'Limite',
+                'LIMIT_HELP' => 'Le nombre de pages en relation à afficher',
+                'ORDER' => 'Classement',
+                'ORDER_BY' => 'Classement par',
+                'SHOW_SCORE' => 'Afficher le score',
+                'SHOW_SCORE_HELP' => 'Activer/désactiver afin de déterminer si les scores doivent être affichés en sortie',
+                'ITEMS' => 'Éléments',
+                'ITEMS_HELP' => 'Prise en charge des collections basées sur `@self`, `@page` et `@taxonomy`',
+                'PAGE_IN_FILTER' => 'Page \'dans\' le filtre',
+                'PAGE_IN_FILTER_HELP' => 'Activer si la page actuelle doit être présente dans la collection filtrée',
+                'EXPLICIT_PROCESS' => 'Traiter les pages explicites',
+                'EXPLICIT_PROCESS_HELP' => 'Activer la correspondance explicite pour cette page',
+                'EXPLICIT_SCORE' => 'Score explicite de la page',
+                'EXPLICIT_SCORE_HELP' => 'Un score compris entre (0 - 100) pour rendre une page explicite',
+                'TAXONOMY_MATCH' => 'Correspondance par type de taxonomie',
+                'TAXONOMY' => 'Taxonomie',
+                'TAXONOMY_HELP' => 'Quel type de taxonomie utiliser pour la correspondance des pages',
+                'TAXONOMY_TAXONOMY_PROCESS' => 'Taxonomie-taxonomie',
+                'TAXONOMY_TAXONOMY_PROCESS_HELP' => 'Activer la taxonomie pour la correspondance de taxonomie',
+                'TAXONOMY_CONTENT_PROCESS' => 'Taxonomie-contenu',
+                'TAXONOMY_CONTENT_PROCESS_HELP' => 'Activer la taxonomie pour la correspondance de contenu',
+                'CONTENT_MATCH' => 'Correspondance par type de contenu',
+                'CONTENT_PROCESS' => 'Contenu-contenu',
+                'CONTENT_PROCESS_HELP' => 'Activer la correspondance de contenu (NOTE : désactivez si vous avez beaucoup de contenu)',
+                'ADVANCED' => 'Avancés',
+                'TAXONOMY_SCORE_SCALE' => 'Taxonomie-niveau de score de taxonomie',
+                'CONTENT_SCORE_SCALE' => 'Taxonomie-niveau de score de contenu'
             ],
             'PLUGIN_SIMPLESEARCH' => [
                 'SEARCH_PLACEHOLDER' => 'Recherche...',
@@ -10036,6 +10191,34 @@ Elérési út: `%2$s`
                 'ALLOW_WEBSERVER_GZIP_HELP' => 'Disattivata per impostazione predefinita. Quando attivata, la compressione configurata Gzip/Deflate WebServer, funzionerà ma la connessione http non verrà chiusa prima dell\'evento onShutDown() rallentando il caricamento della pagina',
                 'OFFLINE_WARNING' => 'Non è possibile stabilire la connessione con il GPM'
             ],
+            'PLUGIN_BLOG_INJECTOR' => [
+                'TEMPLATES' => [
+                    'CONTINUE_READING' => 'Continua a leggere...',
+                    'PREVIOUS_POST' => 'Post precedente',
+                    'NEXT_POST' => 'Prossimo Post',
+                    'SEARCH_TITLE' => 'Cerca',
+                    'POPULAR_TAGS' => 'Tags popolari',
+                    'RELATED_POSTS' => 'Post correlati',
+                    'TOPIC_TAGS' => 'Argomenti',
+                    'RANDOM_ARTICLE' => 'Articolo casuale',
+                    'FEEL_LUCKY' => 'Mi sento fortunato!',
+                    'ARCHIVES' => 'Archivi',
+                    'SYNDICATE' => 'Aggregazione',
+                    'ATOM' => 'Atom 1.0',
+                    'RSS' => 'RSS'
+                ],
+                'ADMIN' => [
+                    'PLUGIN_STATUS' => 'Stato del plugin',
+                    'FRAMEWORK' => 'Framework',
+                    'DEFAULT_STYLESHEET' => 'Aggiungi i fogli di stile di default',
+                    'FRAMEWORK_ASSETS' => 'Aggiungi gli asset per il framework',
+                    'HELP' => [
+                        'FRAMEWORK' => 'Scegli il framework da utilizzare',
+                        'DEFAULT_STYLESHEET' => 'Aggiunge i fogli di stile del blog in base al framework selezionato, quando il valore è true',
+                        'FRAMEWORK_ASSETS' => 'Aggiunge i fogli di stile del framework, quando il valore è true'
+                    ]
+                ]
+            ],
             'PLUGIN_EMAIL' => [
                 'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Per favore, configura l\'indirizzo di destinazione (\'to\') nella configurazione del Plugin Email, oppure direttamente nella form.',
                 'PLEASE_CONFIGURE_A_FROM_ADDRESS' => 'Per favore, configura l\'indirizzo di provenienza (\'from\') nella configurazione del Plugin Email, oppure direttamente nella form'
@@ -11810,6 +11993,34 @@ Path: `%2$s`
                 'ALL' => 'Alle',
                 'FROM' => 'van',
                 'TO' => 'aan'
+            ],
+            'PLUGIN_BLOG_INJECTOR' => [
+                'TEMPLATES' => [
+                    'CONTINUE_READING' => 'Lees verder...',
+                    'PREVIOUS_POST' => 'Vorige bericht',
+                    'NEXT_POST' => 'Volgende bericht',
+                    'SEARCH_TITLE' => 'Zoeken',
+                    'POPULAR_TAGS' => 'Populaire tags',
+                    'RELATED_POSTS' => 'Gerelateerde berichten',
+                    'TOPIC_TAGS' => 'Actueele tags',
+                    'RANDOM_ARTICLE' => 'Willekeurig artikel',
+                    'FEEL_LUCKY' => 'Ik doe een gok!',
+                    'ARCHIVES' => 'Archief',
+                    'SYNDICATE' => 'Syndicate',
+                    'ATOM' => 'Atom 1.0',
+                    'RSS' => 'RSS'
+                ],
+                'ADMIN' => [
+                    'PLUGIN_STATUS' => 'Plugin status',
+                    'FRAMEWORK' => 'Framework',
+                    'DEFAULT_STYLESHEET' => 'Standard stijlsheet toevoegen',
+                    'FRAMEWORK_ASSETS' => 'Framework ondersteuning toevoegen',
+                    'HELP' => [
+                        'FRAMEWORK' => 'Kies framework om te gebruiken',
+                        'DEFAULT_STYLESHEET' => 'Voegt automatisch de bijgevoegde blog stijlsheet toe van geselecteerd framework, wanneer ingeschakeld',
+                        'FRAMEWORK_ASSETS' => 'Voegt automatisch geselecteerd framework toe, wanneer ingeschakeld'
+                    ]
+                ]
             ],
             'PLUGIN_SIMPLESEARCH' => [
                 'SEARCH_PLACEHOLDER' => 'Zoeken...',
@@ -14101,6 +14312,36 @@ Caminho: `%2$s`
                 'USE_PARENT_ACL_HELP' => 'Verifică regulie de acces ale părintelui dacă nu sunt specificate alte reguli de acces',
                 'PROTECT_PROTECTED_PAGE_MEDIA_LABEL' => ' Protejează media ce aparține paginii de logare ',
                 'PROTECT_PROTECTED_PAGE_MEDIA_HELP' => 'Dacă este activată, media ce aparține unei pagini de logare este protejată și nu poate fi accesată decât după logare.'
+            ],
+            'PLUGIN_REL_PAGES' => [
+                'BASICS' => 'Setări de bază',
+                'LIMIT' => 'Limită',
+                'LIMIT_HELP' => 'Numărul afișat al paginilor legate',
+                'ORDER' => 'Ordinea',
+                'ORDER_BY' => 'Ordonează după',
+                'SHOW_SCORE' => 'Arată scorul',
+                'SHOW_SCORE_HELP' => 'Comutați pentru afișarea scorurilor',
+                'ITEMS' => 'Articole',
+                'ITEMS_HELP' => 'Acceptă colecții bazate pe `@self`, `@page` și `@taxonomy`',
+                'PAGE_IN_FILTER' => 'Filtru \'in\' pagină',
+                'PAGE_IN_FILTER_HELP' => 'Activează dacă pagina curentă trebuie să fie în colecția filtrată',
+                'EXPLICIT_PROCESS' => 'Procesează anumite pagini specifice',
+                'EXPLICIT_PROCESS_HELP' => 'Activează pentru procesarea anumitor pagini specifice',
+                'EXPLICIT_SCORE' => 'Scorul paginilor specifice',
+                'EXPLICIT_SCORE_HELP' => 'Un scor între (0 - 100) pentru a da unor pagini specifice greutate',
+                'TAXONOMY_MATCH' => 'Potrivire după Taxonomie',
+                'TAXONOMY' => 'Taxonomie',
+                'TAXONOMY_HELP' => 'Ce fel de taxonomie să fie folosită la potrivirea paginilor',
+                'TAXONOMY_TAXONOMY_PROCESS' => 'Taxonomie-taxonomie',
+                'TAXONOMY_TAXONOMY_PROCESS_HELP' => 'Activeazā potrivirea între taxonomii',
+                'TAXONOMY_CONTENT_PROCESS' => 'Taxonomie-conținut',
+                'TAXONOMY_CONTENT_PROCESS_HELP' => 'Activează potrivirea după taxonomie - conținut',
+                'CONTENT_MATCH' => 'Potrivirea după conținut',
+                'CONTENT_PROCESS' => 'Conținut-conținut',
+                'CONTENT_PROCESS_HELP' => 'Activează pentru potrivire după conținut (Notă: dezactivați dacă aveți conținut mult)',
+                'ADVANCED' => 'Avansat',
+                'TAXONOMY_SCORE_SCALE' => 'Scorul scalei Taxonomie-taxonomie',
+                'CONTENT_SCORE_SCALE' => 'Scorul scalei Taxonomie-conținut'
             ],
             'PLUGIN_SIMPLESEARCH' => [
                 'SEARCH_PLACEHOLDER' => 'Caută...',
@@ -18039,7 +18280,7 @@ Path: `%2$s`
                 6 => 'søndag'
             ]
         ],
-        'checksum' => '2beaa13695ea9536fa0ab5759c0e9d29',
-        'timestamp' => 1513140370
+        'checksum' => '64539981b086b803faf1168fee1feda5',
+        'timestamp' => 1513141724
     ]
 ];

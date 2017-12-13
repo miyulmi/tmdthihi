@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1513140345,
-    'checksum' => '631b7fdc475bf0efc06b63df7899e5a1',
+    'timestamp' => 1513141839,
+    'checksum' => 'e959c55824b780532857b35ab509cef1',
     'files' => [
         'user/config' => [
             'media' => [
@@ -31,7 +31,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1513083619
+                'modified' => 1513141839
             ]
         ],
         'system/config' => [
@@ -57,6 +57,18 @@ return [
                 'file' => 'user/plugins/admin/admin.yaml',
                 'modified' => 1513083620
             ],
+            'plugins/archives' => [
+                'file' => 'user/plugins/archives/archives.yaml',
+                'modified' => 1513141712
+            ],
+            'plugins/blog-injector' => [
+                'file' => 'user/plugins/blog-injector/blog-injector.yaml',
+                'modified' => 1513141695
+            ],
+            'plugins/breadcrumbs' => [
+                'file' => 'user/plugins/breadcrumbs/breadcrumbs.yaml',
+                'modified' => 1513141716
+            ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
                 'modified' => 1513083622
@@ -65,6 +77,10 @@ return [
                 'file' => 'user/plugins/error/error.yaml',
                 'modified' => 1513083623
             ],
+            'plugins/feed' => [
+                'file' => 'user/plugins/feed/feed.yaml',
+                'modified' => 1513141700
+            ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
                 'modified' => 1513083623
@@ -72,6 +88,18 @@ return [
             'plugins/gantry5' => [
                 'file' => 'user/plugins/gantry5/gantry5.yaml',
                 'modified' => 1513083626
+            ],
+            'plugins/gravstrap' => [
+                'file' => 'user/plugins/gravstrap/gravstrap.yaml',
+                'modified' => 1513141665
+            ],
+            'plugins/highlight' => [
+                'file' => 'user/plugins/highlight/highlight.yaml',
+                'modified' => 1513141722
+            ],
+            'plugins/langswitcher' => [
+                'file' => 'user/plugins/langswitcher/langswitcher.yaml',
+                'modified' => 1513141688
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
@@ -89,9 +117,21 @@ return [
                 'file' => 'user/plugins/problems/problems.yaml',
                 'modified' => 1513083627
             ],
+            'plugins/relatedpages' => [
+                'file' => 'user/plugins/relatedpages/relatedpages.yaml',
+                'modified' => 1513141704
+            ],
+            'plugins/shortcode-core' => [
+                'file' => 'user/plugins/shortcode-core/shortcode-core.yaml',
+                'modified' => 1513141675
+            ],
             'plugins/simplesearch' => [
                 'file' => 'user/plugins/simplesearch/simplesearch.yaml',
                 'modified' => 1513083627
+            ],
+            'plugins/taxonomylist' => [
+                'file' => 'user/plugins/taxonomylist/taxonomylist.yaml',
+                'modified' => 1513141708
             ]
         ]
     ],
@@ -155,6 +195,41 @@ return [
                     ]
                 ]
             ],
+            'archives' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'date_display_format' => 'F Y',
+                'show_count' => true,
+                'limit' => 12,
+                'order' => [
+                    'by' => 'date',
+                    'dir' => 'desc'
+                ],
+                'filter_combinator' => 'and',
+                'filters' => [
+                    'category' => 'blog'
+                ],
+                'taxonomy_names' => [
+                    'month' => 'archives_month',
+                    'year' => 'archives_year'
+                ]
+            ],
+            'blog-injector' => [
+                'enabled' => true,
+                'framework' => 'pure',
+                'add_default_css' => true,
+                'add_framework_assets' => true
+            ],
+            'breadcrumbs' => [
+                'enabled' => true,
+                'show_all' => true,
+                'built_in_css' => true,
+                'include_home' => true,
+                'include_current' => true,
+                'icon_home' => '',
+                'icon_divider_classes' => 'fa fa-angle-right',
+                'link_trailing' => false
+            ],
             'email' => [
                 'enabled' => true,
                 'from' => 'phannuthoaimy.sb@gmail.com',
@@ -183,6 +258,14 @@ return [
                     404 => '/error'
                 ]
             ],
+            'feed' => [
+                'enabled' => true,
+                'limit' => 10,
+                'description' => 'My Feed Description',
+                'lang' => 'en-us',
+                'length' => 500,
+                'enable_json_feed' => false
+            ],
             'form' => [
                 'enabled' => true,
                 'built_in_css' => true,
@@ -209,6 +292,19 @@ return [
                 'debug' => false,
                 'compile_yaml' => true,
                 'compile_twig' => true
+            ],
+            'gravstrap' => [
+                'enabled' => true
+            ],
+            'highlight' => [
+                'enabled' => true,
+                'theme' => 'default',
+                'lines' => false
+            ],
+            'langswitcher' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'untranslated_pages_behavior' => 'none'
             ],
             'login' => [
                 'enabled' => true,
@@ -276,6 +372,64 @@ return [
                 'enabled' => true,
                 'built_in_css' => true
             ],
+            'relatedpages' => [
+                'enabled' => true,
+                'limit' => 5,
+                'show_score' => true,
+                'score_threshold' => 20,
+                'filter' => [
+                    'items' => [
+                        '@page' => '/blog'
+                    ],
+                    'order' => [
+                        'by' => 'date',
+                        'dir' => 'desc'
+                    ]
+                ],
+                'page_in_filter' => true,
+                'explicit_pages' => [
+                    'process' => true,
+                    'score' => 100
+                ],
+                'taxonomy_match' => [
+                    'taxonomy' => 'tag',
+                    'taxonomy_taxonomy' => [
+                        'process' => true,
+                        'score_scale' => [
+                            1 => 50,
+                            2 => 75,
+                            3 => 100
+                        ]
+                    ],
+                    'taxonomy_content' => [
+                        'process' => true,
+                        'score_scale' => [
+                            1 => 20,
+                            2 => 30,
+                            3 => 45,
+                            4 => 60,
+                            5 => 70,
+                            6 => 80,
+                            7 => 90,
+                            8 => 100
+                        ]
+                    ]
+                ],
+                'content_match' => [
+                    'process' => false
+                ]
+            ],
+            'shortcode-core' => [
+                'enabled' => true,
+                'active' => true,
+                'active_admin' => true,
+                'parser' => 'regex',
+                'custom_shortcodes' => NULL,
+                'fontawesome' => [
+                    'load' => true,
+                    'url' => '//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css'
+                ]
+            ],
             'simplesearch' => [
                 'enabled' => true,
                 'built_in_css' => true,
@@ -293,6 +447,10 @@ return [
                     'by' => 'date',
                     'dir' => 'desc'
                 ]
+            ],
+            'taxonomylist' => [
+                'enabled' => true,
+                'route' => '/blog'
             ]
         ],
         'media' => [
@@ -772,7 +930,8 @@ return [
                 'allowed_fallback_types' => [
                     
                 ],
-                'auto_metadata_exif' => false
+                'auto_metadata_exif' => false,
+                'upload_limit' => 2097152
             ],
             'session' => [
                 'enabled' => true,
