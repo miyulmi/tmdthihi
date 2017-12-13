@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'D:/xampp/htdocs/tmdthihi/user/plugins/simplesearch/languages.yaml',
-    'modified' => 1512364783,
+    'modified' => 1513083627,
     'data' => [
         'en' => [
             'PLUGIN_SIMPLESEARCH' => [

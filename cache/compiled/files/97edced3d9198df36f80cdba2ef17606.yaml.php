@@ -2,23 +2,25 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'D:/xampp/htdocs/tmdthihi/user/config/plugins/email.yaml',
-    'modified' => 1512364778,
+    'modified' => 1513140314,
     'data' => [
         'enabled' => true,
-        'from' => 'mail@example.com',
-        'to' => 'mail@example.com',
+        'from' => 'phannuthoaimy.sb@gmail.com',
+        'to' => 'phannuthoaimy.sb@gmail.com',
         'mailer' => [
-            'engine' => 'none',
+            'engine' => 'smtp',
             'smtp' => [
-                'server' => 'localhost',
-                'port' => 25,
-                'encryption' => 'none'
+                'server' => 'smtp.gmail.com',
+                'port' => 587,
+                'encryption' => 'tls',
+                'user' => 'phannuthoaimy.sb@gmail.com',
+                'password' => 'Chetchac123'
             ],
             'sendmail' => [
                 'bin' => '/usr/sbin/sendmail'
             ]
         ],
         'content_type' => 'text/html',
-        'debug' => false
+        'debug' => true
     ]
 ];

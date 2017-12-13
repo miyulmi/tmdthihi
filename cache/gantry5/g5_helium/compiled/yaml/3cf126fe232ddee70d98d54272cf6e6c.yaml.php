@@ -2,7 +2,7 @@
 return [
     '@class' => 'Gantry\\Component\\File\\CompiledYamlFile',
     'filename' => 'D:/xampp/htdocs/tmdthihi/user/themes/g5_helium/blueprints/styles/expanded.yaml',
-    'modified' => 1512364783,
+    'modified' => 1513083627,
     'data' => [
         'name' => 'Expanded Styles',
         'description' => 'Expanded section content styles for the Helium theme',

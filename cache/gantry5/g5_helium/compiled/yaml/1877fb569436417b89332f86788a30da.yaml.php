@@ -2,7 +2,7 @@
 return [
     '@class' => 'Gantry\\Component\\File\\CompiledYamlFile',
     'filename' => 'D:/xampp/htdocs/tmdthihi/user/plugins/gantry5/engines/nucleus/particles/logo.yaml',
-    'modified' => 1512364782,
+    'modified' => 1513083625,
     'data' => [
         'name' => 'Logo / Image',
         'description' => 'Display a logo or an image.',

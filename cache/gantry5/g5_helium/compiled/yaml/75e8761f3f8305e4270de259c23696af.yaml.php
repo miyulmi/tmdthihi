@@ -2,7 +2,7 @@
 return [
     '@class' => 'Gantry\\Component\\File\\CompiledYamlFile',
     'filename' => 'D:/xampp/htdocs/tmdthihi/user/plugins/gantry5/engines/nucleus/particles/search.yaml',
-    'modified' => 1512364782,
+    'modified' => 1513083625,
     'data' => [
         'name' => 'Search',
         'description' => 'Search Particle for Grav SimpleSearch plugin',

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'D:/xampp/htdocs/tmdthihi/user/plugins/error/languages.yaml',
-    'modified' => 1512364781,
+    'modified' => 1513083623,
     'data' => [
         'en' => [
             'PLUGIN_ERROR' => [

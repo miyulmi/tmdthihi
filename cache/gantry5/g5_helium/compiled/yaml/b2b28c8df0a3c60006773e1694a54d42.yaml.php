@@ -2,7 +2,7 @@
 return [
     '@class' => 'Gantry\\Component\\File\\CompiledYamlFile',
     'filename' => 'D:/xampp/htdocs/tmdthihi/user/themes/g5_helium/gantry/theme.yaml',
-    'modified' => 1512364783,
+    'modified' => 1513083628,
     'data' => [
         'details' => [
             'name' => 'Helium',

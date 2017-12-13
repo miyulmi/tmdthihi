@@ -2,7 +2,7 @@
 return [
     '@class' => 'Gantry\\Component\\File\\CompiledYamlFile',
     'filename' => 'D:/xampp/htdocs/tmdthihi/user/plugins/gantry5/engines/nucleus/particles/content.yaml',
-    'modified' => 1512364782,
+    'modified' => 1513083625,
     'data' => [
         'name' => 'Page Content',
         'description' => 'Display the main page content in the layout.',
