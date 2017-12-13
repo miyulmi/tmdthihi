@@ -7,12 +7,7 @@ logs/*
 images/*
 
 user/plugins/*
-user/themes/g5_helium
-
-user/data/application-form
-user/data/contact-form
-user/data/application-files
-
+user/themes
 vendor/*
 tmp/*
 user/data/gantry5/themes/g5_helium/css-compiled

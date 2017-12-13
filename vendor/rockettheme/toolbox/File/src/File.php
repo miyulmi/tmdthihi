@@ -54,7 +54,7 @@ class File implements FileInterface
      * Get file instance.
      *
      * @param  string  $filename
-     * @return static
+     * @return FileInterface
      */
     public static function instance($filename)
     {

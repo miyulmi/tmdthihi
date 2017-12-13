@@ -2,9 +2,9 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'D:/xampp/htdocs/tmdthihi/user/accounts/miyulmi.yaml',
-    'modified' => 1513141322,
+    'modified' => 1513174264,
     'data' => [
-        'email' => 'phannuthoaimy.sb@gmail.com',
+        'email' => 'walkhomestay@gmail.com',
         'fullname' => 'Vu My',
         'title' => 'miyulmi',
         'state' => 'enabled',
@@ -18,7 +18,7 @@ return [
             ]
         ],
         'hashed_password' => '$2y$10$Nx4A.Ic0SvIRTm6bJQoi.OA3vbyJIir/3sVQSqnh71wAX4IvFF7XG',
-        'reset' => '0a59161738780b9a3c6ad729c01a47e0::1513590687',
+        'reset' => 'ddbd58d99220473a722308dbe4f9c129::1513777785',
         'language' => 'en',
         'login_attempts' => [
             

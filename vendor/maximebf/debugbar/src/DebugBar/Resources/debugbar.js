@@ -272,9 +272,9 @@ if (typeof(PhpDebugBar) == 'undefined') {
             this.bindAttr('badge', function(value) {
                 if (value !== null) {
                     this.$badge.text(value);
-                    this.$badge.addClass(csscls('visible'));
+                    this.$badge.show();
                 } else {
-                    this.$badge.removeClass(csscls('visible'));
+                    this.$badge.hide();
                 }
             });
 
@@ -370,15 +370,7 @@ if (typeof(PhpDebugBar) == 'undefined') {
                 return "#" + nb + suffix;
             }
 
-            var uri = data['__meta']['uri'], filename;
-            if (uri.length && uri.charAt(uri.length - 1) === '/') {
-                // URI ends in a trailing /: get the portion before then to avoid returning an empty string
-                filename = uri.substr(0, uri.length - 1); // strip trailing '/'
-                filename = filename.substr(filename.lastIndexOf('/') + 1); // get last path segment
-                filename += '/'; // add the trailing '/' back
-            } else {
-                filename = uri.substr(uri.lastIndexOf('/') + 1);
-            }
+            var filename = data['__meta']['uri'].substr(data['__meta']['uri'].lastIndexOf('/') + 1);
             var label = "#" + nb + " " + filename + suffix + ' (' + data['__meta']['datetime'].split(' ')[1] + ')';
             return label;
         }
@@ -903,10 +895,9 @@ if (typeof(PhpDebugBar) == 'undefined') {
          * @param {Object} data
          * @param {String} id The name of this set, optional
          * @param {String} suffix
-         * @param {Bool} show Whether to show the new dataset, optional (default: true)
          * @return {String} Dataset's id
          */
-        addDataSet: function(data, id, suffix, show) {
+        addDataSet: function(data, id, suffix) {
             var label = this.datesetTitleFormater.format(id, data, suffix);
             id = id || (getObjectSize(this.datasets) + 1);
             this.datasets[id] = data;
@@ -916,9 +907,7 @@ if (typeof(PhpDebugBar) == 'undefined') {
                 this.$datasets.show();
             }
 
-            if (typeof(show) == 'undefined' || show) {
-                this.showDataSet(id);
-            }
+            this.showDataSet(id);
             return id;
         },
 
@@ -926,15 +915,14 @@ if (typeof(PhpDebugBar) == 'undefined') {
          * Loads a dataset using the open handler
          * 
          * @param {String} id
-         * @param {Bool} show Whether to show the new dataset, optional (default: true)
          */
-        loadDataSet: function(id, suffix, callback, show) {
+        loadDataSet: function(id, suffix, callback) {
             if (!this.openHandler) {
                 throw new Error('loadDataSet() needs an open handler');
             }
             var self = this;
             this.openHandler.load(id, function(data) {
-                self.addDataSet(data, id, suffix, show);
+                self.addDataSet(data, id, suffix);
                 callback && callback(data);
             });
         },
@@ -1016,13 +1004,10 @@ if (typeof(PhpDebugBar) == 'undefined') {
      * AjaxHandler
      *
      * Extract data from headers of an XMLHttpRequest and adds a new dataset
-     *
-     * @param {Bool} autoShow Whether to immediately show new datasets, optional (default: true)
      */
-    var AjaxHandler = PhpDebugBar.AjaxHandler = function(debugbar, headerName, autoShow) {
+    var AjaxHandler = PhpDebugBar.AjaxHandler = function(debugbar, headerName) {
         this.debugbar = debugbar;
         this.headerName = headerName || 'phpdebugbar';
-        this.autoShow = typeof(autoShow) == 'undefined' ? true : autoShow;
     };
 
     $.extend(AjaxHandler.prototype, {
@@ -1054,7 +1039,7 @@ if (typeof(PhpDebugBar) == 'undefined') {
         loadFromId: function(xhr) {
             var id = this.extractIdFromHeaders(xhr);
             if (id && this.debugbar.openHandler) {
-                this.debugbar.loadDataSet(id, "(ajax)", undefined, this.autoShow);
+                this.debugbar.loadDataSet(id, "(ajax)");
                 return true;
             }
             return false;
@@ -1086,7 +1071,7 @@ if (typeof(PhpDebugBar) == 'undefined') {
             if (data.error) {
                 throw new Error('Error loading debugbar data: ' + data.error);
             } else if(data.data) {
-                this.debugbar.addDataSet(data.data, data.id, "(ajax)", this.autoShow);
+                this.debugbar.addDataSet(data.data, data.id, "(ajax)");
             }
             return true;
         },

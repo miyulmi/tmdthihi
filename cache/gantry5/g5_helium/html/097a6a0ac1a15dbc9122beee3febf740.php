@@ -2,7 +2,7 @@
 return [
     '_type' => 'Gantry\\Component\\Content\\Block\\HtmlBlock',
     '_version' => 1,
-    'id' => '5a24ba253750b7.14558889',
+    'id' => '5a312534a01999.12791445',
     'content' => '<div id="contentcubes-7850-particle" class="g-content g-particle">            <div class="g-contentcubes ">
     
             <div class="cube-items-wrapper">
@@ -10,7 +10,7 @@ return [
                             <div class="item image-position-left cube-row g-grid">
                     <div class="g-block size-50">
                                                     <div class="cube-image-wrapper">
-                                <img src="/tmdthihi/user/themes/g5_helium/images/above/img01.jpeg" alt="Gantry 5 Won &quot;Best Framework System&quot; at J and Beyond 2016 " class="cube-image" />
+                                <img src="/tmdthihi/user/themes/g5_helium/images/above/img01.jpeg?5a2fd2ec" alt="Gantry 5 Won &quot;Best Framework System&quot; at J and Beyond 2016 " class="cube-image" />
                             </div>
                                             </div>
 
@@ -47,7 +47,7 @@ return [
                             <div class="item image-position-right cube-row g-grid">
                     <div class="g-block size-50">
                                                     <div class="cube-image-wrapper">
-                                <img src="/tmdthihi/user/themes/g5_helium/images/above/img02.jpeg" alt="Gantry 5 Has Been Downloaded Over Half a Million Times" class="cube-image" />
+                                <img src="/tmdthihi/user/themes/g5_helium/images/above/img02.jpeg?5a2fd2ec" alt="Gantry 5 Has Been Downloaded Over Half a Million Times" class="cube-image" />
                             </div>
                                             </div>
 

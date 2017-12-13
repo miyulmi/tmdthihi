@@ -2,7 +2,7 @@
 return [
     '_type' => 'Gantry\\Component\\Content\\Block\\HtmlBlock',
     '_version' => 1,
-    'id' => '5a24b9f786e124.27818985',
+    'id' => '5a3123548db1e3.80189338',
     'content' => '<div id="social-3171-particle" class="g-content g-particle">            <div class="g-social ">
                     <a target="_blank" href="http://www.twitter.com/rockettheme" title="" aria-label="">
                 <span class="fa fa-twitter fa-fw"></span>                <span class="g-social-text"></span>            </a>

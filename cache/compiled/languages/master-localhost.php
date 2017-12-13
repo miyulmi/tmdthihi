@@ -1,121 +1,121 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledLanguages',
-    'timestamp' => 1513141724,
-    'checksum' => '64539981b086b803faf1168fee1feda5',
+    'timestamp' => 1513169744,
+    'checksum' => '16fa564710899b26324a00bb4b99dc9c',
     'files' => [
         'system/languages' => [
             'ar' => [
                 'file' => 'system/languages/ar.yaml',
-                'modified' => 1513083619
+                'modified' => 1513143835
             ],
             'ca' => [
                 'file' => 'system/languages/ca.yaml',
-                'modified' => 1513083619
+                'modified' => 1513143835
             ],
             'cs' => [
                 'file' => 'system/languages/cs.yaml',
-                'modified' => 1513083619
+                'modified' => 1513143836
             ],
             'da' => [
                 'file' => 'system/languages/da.yaml',
-                'modified' => 1513083619
+                'modified' => 1513143836
             ],
             'de' => [
                 'file' => 'system/languages/de.yaml',
-                'modified' => 1513083619
+                'modified' => 1513143836
             ],
             'el' => [
                 'file' => 'system/languages/el.yaml',
-                'modified' => 1513083619
+                'modified' => 1513143836
             ],
             'en' => [
                 'file' => 'system/languages/en.yaml',
-                'modified' => 1513083619
+                'modified' => 1513143836
             ],
             'es' => [
                 'file' => 'system/languages/es.yaml',
-                'modified' => 1513083619
+                'modified' => 1513143836
             ],
             'fi' => [
                 'file' => 'system/languages/fi.yaml',
-                'modified' => 1513083619
+                'modified' => 1513143836
             ],
             'fr' => [
                 'file' => 'system/languages/fr.yaml',
-                'modified' => 1513083619
+                'modified' => 1513143836
             ],
             'hr' => [
                 'file' => 'system/languages/hr.yaml',
-                'modified' => 1513083619
+                'modified' => 1513143836
             ],
             'hu' => [
                 'file' => 'system/languages/hu.yaml',
-                'modified' => 1513083619
+                'modified' => 1513143836
             ],
             'it' => [
                 'file' => 'system/languages/it.yaml',
-                'modified' => 1513083619
+                'modified' => 1513143836
             ],
             'ja' => [
                 'file' => 'system/languages/ja.yaml',
-                'modified' => 1513083619
+                'modified' => 1513143836
             ],
             'lt' => [
                 'file' => 'system/languages/lt.yaml',
-                'modified' => 1513083619
+                'modified' => 1513143836
             ],
             'nb' => [
                 'file' => 'system/languages/nb.yaml',
-                'modified' => 1513083619
+                'modified' => 1513143836
             ],
             'nl' => [
                 'file' => 'system/languages/nl.yaml',
-                'modified' => 1513083619
+                'modified' => 1513143836
             ],
             'no' => [
                 'file' => 'system/languages/no.yaml',
-                'modified' => 1513083619
+                'modified' => 1513143836
             ],
             'pl' => [
                 'file' => 'system/languages/pl.yaml',
-                'modified' => 1513083619
+                'modified' => 1513143836
             ],
             'pt' => [
                 'file' => 'system/languages/pt.yaml',
-                'modified' => 1513083619
+                'modified' => 1513143836
             ],
             'ro' => [
                 'file' => 'system/languages/ro.yaml',
-                'modified' => 1513083619
+                'modified' => 1513143836
             ],
             'ru' => [
                 'file' => 'system/languages/ru.yaml',
-                'modified' => 1513083619
+                'modified' => 1513143836
             ],
             'sk' => [
                 'file' => 'system/languages/sk.yaml',
-                'modified' => 1513083619
+                'modified' => 1513143836
             ],
             'sv' => [
                 'file' => 'system/languages/sv.yaml',
-                'modified' => 1513083619
+                'modified' => 1513143836
             ],
             'th' => [
                 'file' => 'system/languages/th.yaml',
-                'modified' => 1513083619
+                'modified' => 1513143836
             ],
             'tr' => [
                 'file' => 'system/languages/tr.yaml',
-                'modified' => 1513083619
+                'modified' => 1513143836
             ],
             'uk' => [
                 'file' => 'system/languages/uk.yaml',
-                'modified' => 1513083619
+                'modified' => 1513143836
             ],
             'vi' => [
                 'file' => 'system/languages/vi.yaml',
-                'modified' => 1513083619
+                'modified' => 1513143836
             ]
         ],
         'user/plugins' => [
@@ -133,7 +133,7 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/languages.yaml',
-                'modified' => 1513083623
+                'modified' => 1513143963
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/languages.yaml',
@@ -5436,7 +5436,15 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'YES' => 'Yes',
                 'NO' => 'No',
                 'REFRESH_PREVENTION' => 'Refresh prevention',
-                'REFRESH_PREVENTION_HELP' => 'Use the form\'s unique ID to ensure the same form is not reprocessed when refreshing the browser'
+                'REFRESH_PREVENTION_HELP' => 'Use the form\'s unique ID to ensure the same form is not reprocessed when refreshing the browser',
+                'LIMIT' => 'Limit',
+                'LIMIT_HELP' => 'Maximum number of allowed files per field (multiple required)',
+                'FILESIZE' => 'Max Filesize',
+                'FILESIZE_HELP' => 'Maximum file size allowed (in MB), 0 = Use system default',
+                'AVOID_OVERWRITING' => 'Avoid overwriting',
+                'AVOID_OVERWRITING_HELP' => 'Prevent files with the same name to be overridden. Date prefix will be added',
+                'RANDOM_NAME' => 'Random name',
+                'RANDOM_NAME_HELP' => 'Generate a random 15 long string name for the uploaded files'
             ],
             'PLUGIN_LOGIN' => [
                 'USERNAME' => 'Username',
@@ -12022,6 +12030,54 @@ Path: `%2$s`
                     ]
                 ]
             ],
+            'PLUGIN_FORM' => [
+                'NOT_VALIDATED' => 'Formulier niet gevalideerd. Een of meerdere verplichte velden ontbreken.',
+                'NONCE_NOT_VALIDATED' => 'Oeps er was een probleem, controleer je input en stuur het formulier opnieuw.',
+                'FILES' => 'Bestanden geupload',
+                'FORM_ALREADY_SUBMITTED' => 'Dit formulier is al eerder verstuurd.',
+                'ALLOW_MULTIPLE' => 'Meer dan een bestand toegestaan',
+                'ALLOW_MULTIPLE_HELP' => 'Staat toe dat meer dan een bestand geselecteerd kan worden voor uploaden.',
+                'DESTINATION' => 'Bestemming',
+                'DESTINATION_HELP' => 'De lokatie waar de bestanden naartoe moeten worden geupload',
+                'ACCEPT' => 'Toegestane MIME types',
+                'ACCEPT_HELP' => 'Een lijst van MIME types welke zijn toegestaan om te uploaden',
+                'ERROR_VALIDATING_CAPTCHA' => 'Fout bij Captcha validatie',
+                'DATA_SUMMARY' => 'Hier is de samenvatting van wat u ons heeft gestuurd:',
+                'NO_FORM_DATA' => 'Geen formdata beschikbaar',
+                'RECAPTCHA' => 'ReCaptcha',
+                'RECAPTCHA_SITE_KEY' => 'Site sleutel',
+                'RECAPTCHA_SITE_KEY_HELP' => 'Voor meer informatie ga naar https://developers.google.com/recaptcha',
+                'RECAPTCHA_SECRET_KEY' => 'Geheime sleutel',
+                'RECAPTCHA_SECRET_KEY_HELP' => 'Voor meer informatie ga naar https://developers.google.com/recaptcha',
+                'GENERAL' => 'Algemeen',
+                'USE_BUILT_IN_CSS' => 'Gebruik ingebouwde CSS',
+                'FILEUPLOAD_PREVENT_SELF' => 'Kan "%s" niet buiten paginas gebruiken.',
+                'FILEUPLOAD_UNABLE_TO_UPLOAD' => 'Niet mogelijk om bestand %s: %s te uploaden',
+                'FILEUPLOAD_UNABLE_TO_MOVE' => 'Niet mogelijk om bestand %s naar "%s" te verplaatsen',
+                'DROPZONE_CANCEL_UPLOAD' => 'Upload annuleren',
+                'DROPZONE_CANCEL_UPLOAD_CONFIRMATION' => 'Weet u zeker dat u deze upload wilt annuleren?',
+                'DROPZONE_DEFAULT_MESSAGE' => 'Sleep hier uw bestanden heen of <strong>klik in dit gebied</strong>',
+                'DROPZONE_FALLBACK_MESSAGE' => 'Uw browser ondersteund geen drag en drop bestand uploads.',
+                'DROPZONE_FALLBACK_TEXT' => 'Gebruik alsublieft het fallback formulier hieronder om uw bestanden te uploaden zoals vroeger.',
+                'DROPZONE_FILE_TOO_BIG' => 'Bestand is te groot ({{filesize}}MiB). Maximale bestandsgrootte: {{maxFilesize}}MiB.',
+                'DROPZONE_INVALID_FILE_TYPE' => 'U kunt geen bestanden uploaden van dit type.',
+                'DROPZONE_MAX_FILES_EXCEEDED' => 'U kunt niet meer bestanden uploaden.',
+                'DROPZONE_REMOVE_FILE' => 'Verwijder bestand',
+                'DROPZONE_REMOVE_FILE_CONFIRMATION' => 'Weet u zeker dat u het bestand wilt verwijderen?',
+                'DROPZONE_RESPONSE_ERROR' => 'Server reageert met {{statusCode}} code.',
+                'YES' => 'Ja',
+                'NO' => 'Nee',
+                'REFRESH_PREVENTION' => 'Verversbescherming',
+                'REFRESH_PREVENTION_HELP' => 'Gebruik het unieke ID van her formulier om zeker te stellen dat hetzelfde formulier niet opnieuw wordt verwerkt als de browser ververst wordt',
+                'LIMIT' => 'Limiet',
+                'LIMIT_HELP' => 'Maximum aantal toegestande bestanden per veld (meerdere vereist)',
+                'FILESIZE' => 'Maximale bestandsgrootte',
+                'FILESIZE_HELP' => 'Maximale bestandsgrootte toegestaan (in MB), 0 = Gebruik systeem standaard',
+                'AVOID_OVERWRITING' => 'Vermijd overschrijven',
+                'AVOID_OVERWRITING_HELP' => 'Voorkom dat bestanden met dezelfde naam worden overschreven. Datum prefix wordt toegevoegd',
+                'RANDOM_NAME' => 'Willekeurige naam',
+                'RANDOM_NAME_HELP' => 'Genereer een willekeurige naam van 15 karakters voor de geuploade bestanden'
+            ],
             'PLUGIN_SIMPLESEARCH' => [
                 'SEARCH_PLACEHOLDER' => 'Zoeken...',
                 'SEARCH_RESULTS' => 'Zoek resultaat',
@@ -15083,6 +15139,7 @@ Calea: `%2$s`
                 'NOT_VALIDATED' => 'Форма не подтверждена. Отсутствует одно или несколько обязательных полей.',
                 'NONCE_NOT_VALIDATED' => 'Упс, у вас возникла проблема, проверьте свои данные и отправьте форму еще раз.',
                 'FILES' => 'Загрузка файлов',
+                'FORM_ALREADY_SUBMITTED' => 'Эта форма уже была отправлена.',
                 'ALLOW_MULTIPLE' => 'Разрешить несколько файлов',
                 'ALLOW_MULTIPLE_HELP' => 'Позволяет выбрать более одного файла для загрузки.',
                 'DESTINATION' => 'Место назначения',
@@ -15104,7 +15161,7 @@ Calea: `%2$s`
                 'FILEUPLOAD_UNABLE_TO_MOVE' => 'Не удалось переместить файл %s в "%s"',
                 'DROPZONE_CANCEL_UPLOAD' => 'Отменить загрузку',
                 'DROPZONE_CANCEL_UPLOAD_CONFIRMATION' => 'Вы действительно хотите отменить эту загрузку?',
-                'DROPZONE_DEFAULT_MESSAGE' => 'Бросьте свои файлы сюда или <strong>щелкните в этой области</strong>',
+                'DROPZONE_DEFAULT_MESSAGE' => 'Перетащите свои файлы сюда или <strong>щелкните в этой области</strong>',
                 'DROPZONE_FALLBACK_MESSAGE' => 'Ваш браузер не поддерживает загрузку файлов с перетаскиванием.',
                 'DROPZONE_FALLBACK_TEXT' => 'Пожалуйста, используйте приведенную ниже форму для загрузки ваших файлов, как в старые времена.',
                 'DROPZONE_FILE_TOO_BIG' => 'Файл слишком большой ({{filesize}}мб). Максимальный размер файла: {{maxFilesize}}мб.',
@@ -15114,7 +15171,17 @@ Calea: `%2$s`
                 'DROPZONE_REMOVE_FILE_CONFIRMATION' => 'Вы действительно хотите удалить этот файл?',
                 'DROPZONE_RESPONSE_ERROR' => 'Сервер ответил кодом {{statusCode}}.',
                 'YES' => 'Да',
-                'NO' => 'Нет'
+                'NO' => 'Нет',
+                'REFRESH_PREVENTION' => 'Предотвращение обновления',
+                'REFRESH_PREVENTION_HELP' => 'Используйте уникальный идентификатор формы, чтобы гарантировать, что одна и та же форма не будет отправляться заново при обновлении страницы браузера',
+                'LIMIT' => 'Лимит',
+                'LIMIT_HELP' => 'Максимальное количество разрешенных файлов в поле (требуется несколько)',
+                'FILESIZE' => 'Максимальный размер файла',
+                'FILESIZE_HELP' => 'Максимально допустимый размер файла (в МБ), 0 = Использовать системные установки по умолчанию',
+                'AVOID_OVERWRITING' => 'Избегать перезаписи',
+                'AVOID_OVERWRITING_HELP' => 'Не допускать перезаписи файлов с тем же именем. Будет добавлен префикс с датой',
+                'RANDOM_NAME' => 'Случайное имя',
+                'RANDOM_NAME_HELP' => 'Создавать случайное строковое имя из 15 символов для загруженных файлов'
             ],
             'PLUGIN_LOGIN' => [
                 'USERNAME' => 'Логин',
@@ -18280,7 +18347,7 @@ Path: `%2$s`
                 6 => 'søndag'
             ]
         ],
-        'checksum' => '64539981b086b803faf1168fee1feda5',
-        'timestamp' => 1513141724
+        'checksum' => '16fa564710899b26324a00bb4b99dc9c',
+        'timestamp' => 1513169744
     ]
 ];

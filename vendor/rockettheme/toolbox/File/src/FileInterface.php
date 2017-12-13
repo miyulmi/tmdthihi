@@ -14,7 +14,7 @@ interface FileInterface
      * Get file instance.
      *
      * @param  string  $filename
-     * @return static
+     * @return mixed
      */
     public static function instance($filename);
 

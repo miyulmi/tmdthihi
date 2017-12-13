@@ -24,32 +24,7 @@
 
             this.set('exclude', excludedLabels);
         },
-        onCopyToClipboard: function (el) {
-            var code = $(el).parent('li').find('code').get(0);
-            var copy = function () {
-                try {
-                    document.execCommand('copy');
-                    alert('Query copied to the clipboard');
-                } catch (err) {
-                    console.log('Oops, unable to copy');
-                }
-            };
-            var select = function (node) {
-                if (document.selection) {
-                    var range = document.body.createTextRange();
-                    range.moveToElementText(node);
-                    range.select();
-                } else if (window.getSelection) {
-                    var range = document.createRange();
-                    range.selectNodeContents(node);
-                    window.getSelection().removeAllRanges();
-                    window.getSelection().addRange(range);
-                }
-                copy();
-                window.getSelection().removeAllRanges();
-            };
-            select(code);
-        },
+
         render: function() {
             this.$status = $('<div />').addClass(csscls('status')).appendTo(this.$el);
 
@@ -92,14 +67,6 @@
                     li.addClass(csscls('error'));
                     li.append($('<span />').addClass(csscls('error')).text("[" + stmt.error_code + "] " + stmt.error_message));
                 }
-                $('<span title="Copy to clipboard" />')
-                    .addClass(csscls('copy-clipboard'))
-                    .css('cursor', 'pointer')
-                    .on('click', function (event) {
-                        self.onCopyToClipboard(this);
-                        event.stopPropagation();
-                    })
-                    .appendTo(li);
                 if (stmt.params && !$.isEmptyObject(stmt.params)) {
                     var table = $('<table><tr><th colspan="2">Params</th></tr></table>').addClass(csscls('params')).appendTo(li);
                     for (var key in stmt.params) {
@@ -120,15 +87,11 @@
             this.$list.$el.appendTo(this.$el);
 
             this.bindAttr('data', function(data) {
-                // the PDO collector maybe is empty
-                if (data.length <= 0) {
-                    return false;
-                }
                 this.$list.set('data', data.statements);
                 this.$status.empty();
 
                 // Search for duplicate statements.
-                for (var sql = {}, unique = 0, duplicate = 0, i = 0; i < data.statements.length; i++) {
+                for (var sql = {}, unique = 0, i = 0; i < data.statements.length; i++) {
                     var stmt = data.statements[i].sql;
                     if (data.statements[i].params && !$.isEmptyObject(data.statements[i].params)) {
                         stmt += ' {' + $.param(data.statements[i].params, false) + '}';
@@ -139,13 +102,11 @@
                 // Add classes to all duplicate SQL statements.
                 for (var stmt in sql) {
                     if (sql[stmt].keys.length > 1) {
-                        duplicate += sql[stmt].keys.length;
+                        unique++;
                         for (var i = 0; i < sql[stmt].keys.length; i++) {
                             this.$list.$el.find('.' + csscls('list-item')).eq(sql[stmt].keys[i])
-                                .addClass(csscls('sql-duplicate'));
+                                .addClass(csscls('sql-duplicate')).addClass(csscls('sql-duplicate-'+unique));
                         }
-                    } else {
-                        unique++;
                     }
                 }
 
@@ -153,8 +114,8 @@
                 if (data.nb_failed_statements) {
                     t.append(", " + data.nb_failed_statements + " of which failed");
                 }
-                if (duplicate) {
-                    t.append(", " + duplicate + " of which were duplicates");
+                if (unique) {
+                    t.append(", " + (data.nb_statements - unique) + " of which were duplicated");
                     t.append(", " + unique + " unique");
                 }
                 if (data.accumulated_duration_str) {

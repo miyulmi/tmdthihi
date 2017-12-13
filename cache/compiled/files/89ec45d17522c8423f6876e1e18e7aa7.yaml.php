@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'D:/xampp/htdocs/tmdthihi/system/languages/cs.yaml',
-    'modified' => 1513083619,
+    'modified' => 1513143836,
     'data' => [
         'INFLECTOR_UNCOUNTABLE' => [
             0 => 'vybavení',

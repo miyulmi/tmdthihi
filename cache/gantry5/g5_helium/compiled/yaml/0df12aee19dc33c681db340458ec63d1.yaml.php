@@ -2,7 +2,7 @@
 return [
     '@class' => 'Gantry\\Component\\File\\CompiledYamlFile',
     'filename' => 'D:/xampp/htdocs/tmdthihi/system/blueprints/pages/default.yaml',
-    'modified' => 1513083618,
+    'modified' => 1513143835,
     'data' => [
         'title' => 'PLUGIN_ADMIN.DEFAULT',
         'rules' => [
@@ -35,7 +35,7 @@ return [
                                         'type' => 'textarea'
                                     ]
                                 ],
-                                'uploads' => [
+                                'header.media_order' => [
                                     'type' => 'pagemedia',
                                     'label' => 'PLUGIN_ADMIN.PAGE_MEDIA'
                                 ]

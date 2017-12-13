@@ -2,7 +2,7 @@
 return [
     '@class' => 'Gantry\\Component\\File\\CompiledYamlFile',
     'filename' => 'D:/xampp/htdocs/tmdthihi/user/data/gantry5/themes/g5_helium/config/block_variations/index.yaml',
-    'modified' => 1512988446,
+    'modified' => 1513088398,
     'data' => [
         'name' => 'block_variations',
         'timestamp' => 1512988446,

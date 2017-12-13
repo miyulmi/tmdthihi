@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1513141839,
-    'checksum' => 'e959c55824b780532857b35ab509cef1',
+    'timestamp' => 1513174235,
+    'checksum' => '1118710b68b855accff7316bf45bc75f',
     'files' => [
         'user/config' => [
             'media' => [
@@ -11,7 +11,7 @@ return [
             ],
             'plugins/email' => [
                 'file' => 'user/config/plugins/email.yaml',
-                'modified' => 1513140314
+                'modified' => 1513174234
             ],
             'plugins/login' => [
                 'file' => 'user/config/plugins/login.yaml',
@@ -31,25 +31,33 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1513141839
+                'modified' => 1513169727
+            ],
+            'themes/afterburner2' => [
+                'file' => 'user/config/themes/afterburner2.yaml',
+                'modified' => 1513142831
+            ],
+            'themes/twenty' => [
+                'file' => 'user/config/themes/twenty.yaml',
+                'modified' => 1513144009
             ]
         ],
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1513083618
+                'modified' => 1513143835
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1513083618
+                'modified' => 1513143835
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1513083618
+                'modified' => 1513143835
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1513083618
+                'modified' => 1513143835
             ]
         ],
         'user/plugins' => [
@@ -83,7 +91,7 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1513083623
+                'modified' => 1513143962
             ],
             'plugins/gantry5' => [
                 'file' => 'user/plugins/gantry5/gantry5.yaml',
@@ -232,9 +240,9 @@ return [
             ],
             'email' => [
                 'enabled' => true,
-                'from' => 'phannuthoaimy.sb@gmail.com',
+                'from' => 'walkhomestay@gmail.com',
                 'from_name' => NULL,
-                'to' => 'phannuthoaimy.sb@gmail.com',
+                'to' => 'walkhomestay@gmail.com',
                 'to_name' => NULL,
                 'mailer' => [
                     'engine' => 'smtp',
@@ -242,8 +250,8 @@ return [
                         'server' => 'smtp.gmail.com',
                         'port' => 587,
                         'encryption' => 'tls',
-                        'user' => 'phannuthoaimy.sb@gmail.com',
-                        'password' => 'Chetchac123'
+                        'user' => 'walkhomestay@gmail.com',
+                        'password' => 'xanhduong'
                     ],
                     'sendmail' => [
                         'bin' => '/usr/sbin/sendmail'
@@ -276,6 +284,7 @@ return [
                     'destination' => 'self@',
                     'avoid_overwriting' => false,
                     'random_name' => false,
+                    'filesize' => 0,
                     'accept' => [
                         0 => 'image/*'
                     ]
@@ -776,9 +785,11 @@ return [
             'wrapped_site' => false,
             'reverse_proxy_setup' => false,
             'force_ssl' => false,
+            'force_lowercase_urls' => true,
             'custom_base_url' => '',
             'username_regex' => '^[a-z0-9_-]{3,16}$',
             'pwd_regex' => '(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,}',
+            'intl_enabled' => true,
             'languages' => [
                 'supported' => [
                     
@@ -952,6 +963,20 @@ return [
         ],
         'security' => [
             'salt' => 'KQ5avAmgpDyinW'
+        ],
+        'themes' => [
+            'afterburner2' => [
+                'dropdown' => [
+                    'enabled' => true
+                ]
+            ],
+            'twenty' => [
+                'enabled' => true,
+                'color' => 'blue',
+                'dropdown' => [
+                    'enabled' => true
+                ]
+            ]
         ]
     ]
 ];

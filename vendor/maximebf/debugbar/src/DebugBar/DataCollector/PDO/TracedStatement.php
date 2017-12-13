@@ -46,7 +46,7 @@ class TracedStatement
     public function start($startTime = null, $startMemory = null)
     {
         $this->startTime = $startTime ?: microtime(true);
-        $this->startMemory = $startMemory ?: memory_get_usage(false);
+        $this->startMemory = $startMemory ?: memory_get_usage(true);
     }
 
     /**
@@ -59,7 +59,7 @@ class TracedStatement
     {
         $this->endTime = $endTime ?: microtime(true);
         $this->duration = $this->endTime - $this->startTime;
-        $this->endMemory = $endMemory ?: memory_get_usage(false);
+        $this->endMemory = $endMemory ?: memory_get_usage(true);
         $this->memoryDelta = $this->endMemory - $this->startMemory;
         $this->exception = $exception;
         $this->rowCount = $rowCount;
@@ -110,7 +110,7 @@ class TracedStatement
         foreach ($this->parameters as $k => $v) {
             $v = "$quoteLeft$v$quoteRight";
             if (!is_numeric($k)) {
-                $sql = preg_replace("/{$k}\b/", $v, $sql, 1);
+                $sql = str_replace($k, $v, $sql);
             } else {
                 $p = strpos($sql, '?');
                 $sql = substr($sql, 0, $p) . $v. substr($sql, $p + 1);

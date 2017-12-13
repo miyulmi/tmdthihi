@@ -1,0 +1,33 @@
+name: About Us Content
+description: Display social buttons.
+type: particle
+
+
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable social particles.
+      default: true
+    title:
+      type: input.text
+      label: Title
+    
+    css.class:
+      type: input.selectize
+      label: CSS Classes
+      description: CSS class name for the particle.
+    
+
+    icon:
+          type: input.icon
+          label: Icon
+
+    content:
+          type: input.text
+          label: Text
+
+  
+

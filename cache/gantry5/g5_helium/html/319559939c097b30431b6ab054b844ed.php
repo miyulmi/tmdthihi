@@ -2,7 +2,7 @@
 return [
     '_type' => 'Gantry\\Component\\Content\\Block\\HtmlBlock',
     '_version' => 1,
-    'id' => '5a24ba250827c4.20943826',
+    'id' => '5a3125341d0021.95846988',
     'content' => '<div id="owlcarousel-2455-particle" class="g-content g-particle">            <div class="">
         
         <div id="g-owlcarousel-owlcarousel-2455" class="g-owlcarousel owl-carousel has-color-overlay">
@@ -10,7 +10,7 @@ return [
                             <div class="g-owlcarousel-item owl-item">
                     <div class="g-owlcarousel-item-wrapper">
                         <div class="g-owlcarousel-item-img">
-                            <img src="/tmdthihi/user/themes/g5_helium/images/header/img01.jpg" alt="Helium is here!" />
+                            <img src="/tmdthihi/user/themes/g5_helium/images/header/img01.jpg?5a2fd2ec" alt="Helium is here!" />
                         </div>
                         <div class="g-owlcarousel-item-content-container">
                             <div class="g-owlcarousel-item-content-wrapper">
@@ -28,7 +28,7 @@ return [
                             <div class="g-owlcarousel-item owl-item">
                     <div class="g-owlcarousel-item-wrapper">
                         <div class="g-owlcarousel-item-img">
-                            <img src="/tmdthihi/user/themes/g5_helium/images/header/img02.jpg" alt="Helium is Gantry powered!" />
+                            <img src="/tmdthihi/user/themes/g5_helium/images/header/img02.jpg?5a2fd2ec" alt="Helium is Gantry powered!" />
                         </div>
                         <div class="g-owlcarousel-item-content-container">
                             <div class="g-owlcarousel-item-content-wrapper">
@@ -52,10 +52,10 @@ return [
     ],
     'scripts' => [
         'footer' => [
-            '455662dcd2433281138ca38793424d45395ddd444f2c529daf0b537b16501a6271294ca8' => [
+            'c47a12e7d1db5e1deb547e2eca8c5fdb2f2c2f86d29104c2a9adba616cef1cb90bc05bb7' => [
                 ':type' => 'file',
                 ':priority' => 0,
-                'src' => '/tmdthihi/user/themes/g5_helium/js/owlcarousel.js',
+                'src' => '/tmdthihi/user/themes/g5_helium/js/owlcarousel.js?5a2fd2ec',
                 'type' => 'text/javascript',
                 'defer' => false,
                 'async' => false,

@@ -1,0 +1,73 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+
+{% set stt = particle.css.class %}
+
+<div class="g-aboutus1 {{ particle.css.class }}">
+{% if stt != 'amp' %}
+
+  {% set random = random() %}
+    <div class="g-aboutus-title">
+
+        <h4> <i class="{{particle.icon}}"></i>{{particle.title}}</h4>
+    </div>
+    <div class="g-aboutus-cont">
+        <div class="wrapper wrapper{{random}}"data-id="{{random}}">
+            <p class="content content{{random}}" data-height="0">{{particle.content|raw}}</p>
+        </div>
+            <a class="readmore readmore{{random}}" data-id="{{random}}"><i class="fa fa-chevron-right" aria-hidden="true" ></i>Read more</a>
+            <a class="showless showless{{random}}" data-id="{{random}}"> <i class="fa fa-chevron-right" aria-hidden="true" ></i>Show less</a>
+    </div>
+
+
+{% else %}
+        
+          <div class="g-aboutus-title">
+      
+              <h4> <i class="{{particle.icon}}"></i>{{particle.title}}</h4>
+          </div>
+          <div class="g-aboutus-cont">
+              <div class="wrapper wrapper">
+                  <p class="content content">{{particle.content|raw}}</p>
+              </div>
+          </div>
+      
+      
+    
+{% endif %}
+</div>
+
+{% endblock %}
+
+{% block javascript_footer %}
+{% if stt != 'amp' %}
+<script>
+     $(".readmore{{random}}").click(function (event) {
+        event.preventDefault();
+        var id = $(this).attr("data-id");
+        var height = $(this).attr("data-height");
+        height=$(".content"+id).outerHeight(true);
+        $(".readmore"+id).hide();
+        $(".wrapper"+id).height(height);
+        $(".showless"+id).css("visibility","visible");
+        $(".showless"+id).show();
+
+    });
+
+    $(".showless").click(function(event){
+        event.preventDefault();
+        var id = $(this).attr("data-id");
+        var height = $(this).attr("data-height");
+        height= "7.5em";
+        $(".showless"+id).hide();
+        //$(".wrapper"+id).css("overflow","hidden");
+        $(".wrapper"+id).height(height);
+        $(".readmore"+id).show();
+
+    })
+
+
+</script>
+{% endif %}
+{% endblock %}

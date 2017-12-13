@@ -1,14 +1,14 @@
 enabled: true
-from: phannuthoaimy.sb@gmail.com
-to: phannuthoaimy.sb@gmail.com
+from: walkhomestay@gmail.com
+to: walkhomestay@gmail.com
 mailer:
   engine: smtp
   smtp:
     server: smtp.gmail.com
     port: 587
     encryption: tls
-    user: phannuthoaimy.sb@gmail.com
-    password: Chetchac123
+    user: walkhomestay@gmail.com
+    password: xanhduong
   sendmail:
     bin: /usr/sbin/sendmail
 content_type: text/html

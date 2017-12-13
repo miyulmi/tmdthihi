@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'D:/xampp/htdocs/tmdthihi/system/config/streams.yaml',
-    'modified' => 1513083618,
+    'modified' => 1513143835,
     'data' => [
         'schemes' => [
             'image' => [

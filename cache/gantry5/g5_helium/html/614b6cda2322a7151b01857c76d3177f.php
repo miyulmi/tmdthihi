@@ -2,7 +2,7 @@
 return [
     '_type' => 'Gantry\\Component\\Content\\Block\\HtmlBlock',
     '_version' => 1,
-    'id' => '5a24ba252da508.31083435',
+    'id' => '5a3125347b7b71.74483141',
     'content' => '<div id="contenttabs-3854-particle" class="g-content g-particle">            <div class="">
         
         <div class="g-contenttabs">
@@ -132,10 +132,10 @@ a handful of things you can do with Gantry 5’s powerful Menu Editor.</p>
     ],
     'scripts' => [
         'head' => [
-            '62b375c0b11e24c901661b2c02fbc042e02fdee229dc1b8a5ebf60ead8ba7f239b5d4b69' => [
+            'e5f16a7cb390915178f8860063bd94ecd6a1b2be8fcf5355c8d00a2d3cb22f33cb9da97b' => [
                 ':type' => 'file',
                 ':priority' => 0,
-                'src' => '/tmdthihi/user/themes/g5_helium/js/juitabs.js',
+                'src' => '/tmdthihi/user/themes/g5_helium/js/juitabs.js?5a2fd2ec',
                 'type' => 'text/javascript',
                 'defer' => false,
                 'async' => false,

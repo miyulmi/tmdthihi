@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1513141804,
-    'checksum' => '0faf0205db284e4a81bb6bf1f71a3fdd',
+    'timestamp' => 1513174234,
+    'checksum' => '00260e549f625748a068c4d8daddf445',
     'files' => [
         'user/plugins/admin/blueprints/config' => [
             'media' => [
@@ -13,19 +13,19 @@ return [
         'system/blueprints/config' => [
             'media' => [
                 'file' => 'system/blueprints/config/media.yaml',
-                'modified' => 1513083618
+                'modified' => 1513143834
             ],
             'site' => [
                 'file' => 'system/blueprints/config/site.yaml',
-                'modified' => 1513083618
+                'modified' => 1513143834
             ],
             'streams' => [
                 'file' => 'system/blueprints/config/streams.yaml',
-                'modified' => 1513083618
+                'modified' => 1513143834
             ],
             'system' => [
                 'file' => 'system/blueprints/config/system.yaml',
-                'modified' => 1513083618
+                'modified' => 1513143835
             ]
         ],
         'user/plugins' => [
@@ -59,7 +59,7 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/blueprints.yaml',
-                'modified' => 1513083623
+                'modified' => 1513143962
             ],
             'plugins/gantry5' => [
                 'file' => 'user/plugins/gantry5/blueprints.yaml',
@@ -1725,6 +1725,20 @@ return [
                 'name' => 'system.pwd_regex',
                 'validation' => 'loose'
             ],
+            'system.intl_enabled' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_ADMIN.INTL_ENABLED',
+                'highlight' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'system.intl_enabled',
+                'validation' => 'loose'
+            ],
             'system.wrapped_site' => [
                 'type' => 'toggle',
                 'label' => 'PLUGIN_ADMIN.WRAPPED_SITE',
@@ -1753,20 +1767,6 @@ return [
                 'name' => 'system.absolute_urls',
                 'validation' => 'loose'
             ],
-            'system.case_insensitive_urls' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_ADMIN.CASE_INSENSITIVE_URLS',
-                'highlight' => 0,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.YES',
-                    0 => 'PLUGIN_ADMIN.NO'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'system.case_insensitive_urls',
-                'validation' => 'loose'
-            ],
             'system.param_sep' => [
                 'type' => 'select',
                 'size' => 'medium',
@@ -1792,6 +1792,21 @@ return [
                     'type' => 'bool'
                 ],
                 'name' => 'system.force_ssl',
+                'validation' => 'loose'
+            ],
+            'system.force_lowercase_urls' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_ADMIN.FORCE_LOWERCASE_URLS',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'system.force_lowercase_urls',
                 'validation' => 'loose'
             ],
             'system.custom_base_url' => [
@@ -3036,8 +3051,21 @@ return [
                 'name' => 'plugins.form.files.multiple',
                 'validation' => 'strict'
             ],
+            'plugins.form.files.limit' => [
+                'type' => 'text',
+                'size' => 'x-small',
+                'label' => 'PLUGIN_FORM.LIMIT',
+                'default' => 10,
+                'validate' => [
+                    'type' => 'number',
+                    'min' => 1
+                ],
+                'name' => 'plugins.form.files.limit',
+                'validation' => 'strict'
+            ],
             'plugins.form.files.destination' => [
                 'type' => 'text',
+                'size' => 'large',
                 'label' => 'PLUGIN_FORM.DESTINATION',
                 'default' => '@self',
                 'name' => 'plugins.form.files.destination',
@@ -3055,6 +3083,48 @@ return [
                     'type' => 'commalist'
                 ],
                 'name' => 'plugins.form.files.accept',
+                'validation' => 'strict'
+            ],
+            'plugins.form.files.filesize' => [
+                'type' => 'text',
+                'label' => 'PLUGIN_FORM.FILESIZE',
+                'size' => 'x-small',
+                'default' => 5,
+                'validate' => [
+                    'type' => 'number',
+                    'min' => 0
+                ],
+                'name' => 'plugins.form.files.filesize',
+                'validation' => 'strict'
+            ],
+            'plugins.form.files.avoid_overwriting' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_FORM.AVOID_OVERWRITING',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.form.files.avoid_overwriting',
+                'validation' => 'strict'
+            ],
+            'plugins.form.files.random_name' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_FORM.RANDOM_NAME',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.form.files.random_name',
                 'validation' => 'strict'
             ],
             'plugins.form.recaptcha' => [
@@ -4637,11 +4707,12 @@ return [
                 'reverse_proxy_setup' => 'system.reverse_proxy_setup',
                 'username_regex' => 'system.username_regex',
                 'pwd_regex' => 'system.pwd_regex',
+                'intl_enabled' => 'system.intl_enabled',
                 'wrapped_site' => 'system.wrapped_site',
                 'absolute_urls' => 'system.absolute_urls',
-                'case_insensitive_urls' => 'system.case_insensitive_urls',
                 'param_sep' => 'system.param_sep',
                 'force_ssl' => 'system.force_ssl',
+                'force_lowercase_urls' => 'system.force_lowercase_urls',
                 'custom_base_url' => 'system.custom_base_url'
             ],
             'plugins' => [
@@ -4783,8 +4854,12 @@ return [
                     'refresh_prevention' => 'plugins.form.refresh_prevention',
                     'files' => [
                         'multiple' => 'plugins.form.files.multiple',
+                        'limit' => 'plugins.form.files.limit',
                         'destination' => 'plugins.form.files.destination',
-                        'accept' => 'plugins.form.files.accept'
+                        'accept' => 'plugins.form.files.accept',
+                        'filesize' => 'plugins.form.files.filesize',
+                        'avoid_overwriting' => 'plugins.form.files.avoid_overwriting',
+                        'random_name' => 'plugins.form.files.random_name'
                     ],
                     'recaptcha' => [
                         'site_key' => 'plugins.form.recaptcha.site_key',
