@@ -1,93 +1,93 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1512356288,
-    'checksum' => 'd1501047fd2472d401dfa948200c9cf6',
+    'timestamp' => 1513083682,
+    'checksum' => 'd308ec0448f6d20ae20179b576e4b11d',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
-                'modified' => 1512355396
+                'modified' => 1513083619
             ],
             'plugins/email' => [
                 'file' => 'user/config/plugins/email.yaml',
-                'modified' => 1508324996
+                'modified' => 1513083619
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
-                'modified' => 1512355394
+                'modified' => 1513083619
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1507771734
+                'modified' => 1513083619
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
-                'modified' => 1512355396
+                'modified' => 1513083619
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1512356288
+                'modified' => 1513083619
             ]
         ],
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1507771734
+                'modified' => 1513083618
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1507771734
+                'modified' => 1513083618
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1507771734
+                'modified' => 1513083618
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1507771734
+                'modified' => 1513083618
             ]
         ],
         'user/plugins' => [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1508325000
+                'modified' => 1513083620
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1508325002
+                'modified' => 1513083622
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
-                'modified' => 1507771736
+                'modified' => 1513083623
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1508325006
+                'modified' => 1513083623
             ],
             'plugins/gantry5' => [
                 'file' => 'user/plugins/gantry5/gantry5.yaml',
-                'modified' => 1508307660
+                'modified' => 1513083626
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1508325008
+                'modified' => 1513083627
             ],
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/markdown-notices.yaml',
-                'modified' => 1507771736
+                'modified' => 1513083627
             ],
             'plugins/pagination' => [
                 'file' => 'user/plugins/pagination/pagination.yaml',
-                'modified' => 1508325010
+                'modified' => 1513083627
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
-                'modified' => 1507771736
+                'modified' => 1513083627
             ],
             'plugins/simplesearch' => [
                 'file' => 'user/plugins/simplesearch/simplesearch.yaml',
-                'modified' => 1508325008
+                'modified' => 1513083627
             ]
         ]
     ],

@@ -1,81 +1,81 @@
 <?php
 return [
     '@class' => 'Gantry\\Component\\Config\\CompiledConfig',
-    'timestamp' => 1512358711,
-    'checksum' => 'd1cc145b4de926dfc18ba287a7c0e18f',
+    'timestamp' => 1513083724,
+    'checksum' => '417d2b119143ed89a46cffc721cfbe95',
     'files' => [
         'user/data/gantry5/themes/g5_helium/config/home_-_particles' => [
             'assignments' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/home_-_particles/assignments.yaml',
-                'modified' => 1512356828
+                'modified' => 1513083620
             ],
             'index' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/home_-_particles/index.yaml',
-                'modified' => 1512358696
+                'modified' => 1513083620
             ],
             'layout' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/home_-_particles/layout.yaml',
-                'modified' => 1512358696
+                'modified' => 1513083620
             ]
         ],
         'user/data/gantry5/themes/g5_helium/config/default' => [
             'index' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/index.yaml',
-                'modified' => 1512356576
+                'modified' => 1513083619
             ],
             'layout' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/layout.yaml',
-                'modified' => 1508324996
+                'modified' => 1513083619
             ],
             'page/body' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/page/body.yaml',
-                'modified' => 1508324996
+                'modified' => 1513083619
             ],
             'particles/branding' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/particles/branding.yaml',
-                'modified' => 1508324996
+                'modified' => 1513083619
             ],
             'particles/copyright' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/particles/copyright.yaml',
-                'modified' => 1508324996
+                'modified' => 1513083619
             ],
             'particles/logo' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/particles/logo.yaml',
-                'modified' => 1508324996
+                'modified' => 1513083619
             ],
             'particles/social' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/particles/social.yaml',
-                'modified' => 1508324996
+                'modified' => 1513083620
             ],
             'particles/totop' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/particles/totop.yaml',
-                'modified' => 1508324996
+                'modified' => 1513083620
             ]
         ],
         'user/themes/g5_helium/config/default' => [
             'page/body' => [
                 'file' => 'user/themes/g5_helium/config/default/page/body.yaml',
-                'modified' => 1508307662
+                'modified' => 1513083627
             ],
             'particles/branding' => [
                 'file' => 'user/themes/g5_helium/config/default/particles/branding.yaml',
-                'modified' => 1508307662
+                'modified' => 1513083627
             ],
             'particles/copyright' => [
                 'file' => 'user/themes/g5_helium/config/default/particles/copyright.yaml',
-                'modified' => 1508307662
+                'modified' => 1513083627
             ],
             'particles/logo' => [
                 'file' => 'user/themes/g5_helium/config/default/particles/logo.yaml',
-                'modified' => 1508307662
+                'modified' => 1513083627
             ],
             'particles/social' => [
                 'file' => 'user/themes/g5_helium/config/default/particles/social.yaml',
-                'modified' => 1508307662
+                'modified' => 1513083627
             ],
             'particles/totop' => [
                 'file' => 'user/themes/g5_helium/config/default/particles/totop.yaml',
-                'modified' => 1508307662
+                'modified' => 1513083627
             ]
         ]
     ],
