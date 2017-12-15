@@ -4,12 +4,26 @@ preset:
   name: default
   timestamp: 1468340932
 layout:
-  navigation: {  }
-  header: {  }
-  intro: {  }
-  features: {  }
+  /navigation/:
+    -
+      - 'menu-6409 65'
+      - 'search-4005 35'
+  /header/: {  }
+  /intro/: {  }
+  /features/:
+    -
+      - contenttabs-8156
+    -
+      - 'contentcubes-7135 50'
+      - 'contentcubes-2734 50'
+    -
+      - 'contentcubes-1319 50'
+      - 'contentcubes-4014 50'
+    -
+      - 'contentcubes-9878 50'
+      - 'contentcubes-2545 50'
   utility: {  }
-  above: {  }
+  /above/: {  }
   testimonials: {  }
   expanded: {  }
   /container-main/:
@@ -23,34 +37,23 @@ layout:
 structure:
   navigation:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - children
+    attributes:
+      boxed: ''
+      class: ''
   header:
-    inherit:
-      outline: full_width
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
+      class: ''
   intro:
     type: section
-    inherit:
-      outline: full_width
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
+      class: ''
   features:
     type: section
-    inherit:
-      outline: full_width
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
+      class: ''
   utility:
     type: section
     inherit:
@@ -61,12 +64,9 @@ structure:
         - children
   above:
     type: section
-    inherit:
-      outline: full_width
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: '1'
+      class: ''
   testimonials:
     type: section
     inherit:
@@ -86,33 +86,128 @@ structure:
   mainbar:
     type: section
     subtype: main
-    inherit:
-      outline: full_width
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      class: ''
   sidebar:
     type: section
     subtype: aside
-    inherit:
-      outline: default
-      include:
-        - block
-        - attributes
-        - children
+    attributes:
+      class: ''
   container-main:
     attributes:
       boxed: ''
+      class: ''
+      extra: {  }
   footer:
     inherit:
-      outline: default
+      outline: home_-_particles
       include:
-        - children
         - attributes
+        - children
   offcanvas:
-    inherit:
-      outline: default
-      include:
-        - children
-        - attributes
+    attributes:
+      position: g-offcanvas-left
+      class: ''
+      extra: {  }
+      swipe: '1'
+      css3animation: '1'
+content:
+  contenttabs-8156:
+    title: 'Content Tabs'
+    attributes:
+      items:
+        -
+          title: 'Danh sách HomeStay Miền Bắc'
+  contentcubes-7135:
+    title: 'Content Cubes'
+    attributes:
+      css:
+        class: ''
+      title: ''
+      items:
+        -
+          image: 'gantry-media://hs1.jpg'
+          imageposition: left
+          label: ''
+          title: 'Sóc HomeStay'
+          tags: {  }
+          link: ''
+          linktext: '&rarr;'
+          buttonclass: ''
+          buttontarget: _self
+          name: Soc
+  contentcubes-2734:
+    title: 'Content Cubes'
+    attributes:
+      items:
+        -
+          image: 'gantry-media://hs3.jpg'
+          imageposition: left
+          label: ''
+          title: 'Home Of Dreamer'
+          tags: {  }
+          link: /t/thong-tin-homestay
+          linktext: ''
+          buttonclass: ''
+          buttontarget: _self
+          name: homeofdreamer
+  contentcubes-1319:
+    title: 'Content Cubes'
+    attributes:
+      items:
+        -
+          image: 'gantry-media://wine-valley-homestay-da-lat-ivivu-11-1495510286615.jpg'
+          imageposition: left
+          label: ''
+          title: 'Wine Homestay'
+          tags: {  }
+          link: ''
+          linktext: '&rarr;'
+          buttonclass: ''
+          buttontarget: _self
+          name: Wine
+  contentcubes-4014:
+    title: 'Content Cubes'
+    attributes:
+      items:
+        -
+          image: 'gantry-media://947337_1216222558395461_3660895225269412471_n.jpg'
+          imageposition: left
+          label: ''
+          title: Hiên
+          tags: {  }
+          link: ''
+          linktext: '&rarr;'
+          buttonclass: ''
+          buttontarget: _self
+          name: hien
+  contentcubes-9878:
+    title: 'Content Cubes'
+    attributes:
+      items:
+        -
+          image: 'gantry-media://au-frais-07073110.jpg'
+          imageposition: left
+          label: ''
+          title: 'Quê Hương Homestay'
+          tags: {  }
+          link: ''
+          linktext: '&rarr;'
+          buttonclass: ''
+          buttontarget: _self
+          name: Que
+  contentcubes-2545:
+    title: 'Content Cubes'
+    attributes:
+      items:
+        -
+          image: 'gantry-media://moc-chau-moc-31.jpg'
+          imageposition: left
+          label: ''
+          title: 'Lạc Homestay'
+          tags: {  }
+          link: ''
+          linktext: '&rarr;'
+          buttonclass: ''
+          buttontarget: _self
+          name: Lac

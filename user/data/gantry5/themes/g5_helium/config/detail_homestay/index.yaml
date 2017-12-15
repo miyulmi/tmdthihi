@@ -1,0 +1,57 @@
+name: detail_homestay
+timestamp: 1513302812
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1468340932
+positions: {  }
+sections:
+  navigation: Navigation
+  intro: Intro
+  features: Features
+  utility: Utility
+  above: Above
+  testimonials: Testimonials
+  expanded: Expanded
+  header: Header
+  mainbar: Mainbar
+  sidebar: Sidebar
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  detail_homestay:
+    detail_homestay-6477: 'Detail homestay'
+  contenttabs:
+    contenttabs-8156: 'Content Tabs'
+  contentcubes:
+    contentcubes-4014: hien
+    contentcubes-2734: otaku
+    contentcubes-1319: wine
+    contentcubes-7135: soc
+  menu:
+    menu-6227: Menu
+  search:
+    search-5854: Search
+  copyright:
+    copyright-2248: Copyright
+  totop:
+    totop-5457: 'To Top'
+inherit:
+  list_homestay:
+    navigation: navigation
+    header: header
+    above: above
+    mainbar: mainbar
+    sidebar: sidebar
+    offcanvas: offcanvas
+    menu-6227: menu-6409
+    search-5854: search-4005
+  full_width:
+    utility: utility
+    testimonials: testimonials
+    expanded: expanded
+  home_-_particles:
+    footer: footer
+    copyright-2248: copyright-1736
+    totop-5457: totop-8670

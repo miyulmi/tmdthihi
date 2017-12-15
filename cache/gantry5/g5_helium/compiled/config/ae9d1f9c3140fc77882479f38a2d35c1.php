@@ -1,13 +1,13 @@
 <?php
 return [
     '@class' => 'Gantry\\Component\\Config\\CompiledConfig',
-    'timestamp' => 1513169748,
-    'checksum' => '941af8aea512b33c3c48da0da4eecf05',
+    'timestamp' => 1513302643,
+    'checksum' => 'a6d086d3688af033fbc71fb7d8a322a2',
     'files' => [
         'user/data/gantry5/themes/g5_helium/config/_error' => [
             'index' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/_error/index.yaml',
-                'modified' => 1513088398
+                'modified' => 1513182654
             ],
             'layout' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/_error/layout.yaml',
@@ -17,15 +17,23 @@ return [
         'user/data/gantry5/themes/g5_helium/config/default' => [
             'index' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/index.yaml',
-                'modified' => 1513088398
+                'modified' => 1513301755
             ],
             'layout' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/layout.yaml',
-                'modified' => 1513088398
+                'modified' => 1513301755
+            ],
+            'page/assets' => [
+                'file' => 'user/data/gantry5/themes/g5_helium/config/default/page/assets.yaml',
+                'modified' => 1513302384
             ],
             'page/body' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/page/body.yaml',
-                'modified' => 1513088398
+                'modified' => 1513302384
+            ],
+            'page/head' => [
+                'file' => 'user/data/gantry5/themes/g5_helium/config/default/page/head.yaml',
+                'modified' => 1513302384
             ],
             'particles/branding' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/particles/branding.yaml',
@@ -49,38 +57,49 @@ return [
             ],
             'styles' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/styles.yaml',
-                'modified' => 1513088398
+                'modified' => 1513267412
             ]
         ],
         'user/themes/g5_helium/config/default' => [
             'page/body' => [
                 'file' => 'user/themes/g5_helium/config/default/page/body.yaml',
-                'modified' => 1513083627
+                'modified' => 1513083626
             ],
             'particles/branding' => [
                 'file' => 'user/themes/g5_helium/config/default/particles/branding.yaml',
-                'modified' => 1513083627
+                'modified' => 1513083626
             ],
             'particles/copyright' => [
                 'file' => 'user/themes/g5_helium/config/default/particles/copyright.yaml',
-                'modified' => 1513083627
+                'modified' => 1513083626
             ],
             'particles/logo' => [
                 'file' => 'user/themes/g5_helium/config/default/particles/logo.yaml',
-                'modified' => 1513083627
+                'modified' => 1513083626
             ],
             'particles/social' => [
                 'file' => 'user/themes/g5_helium/config/default/particles/social.yaml',
-                'modified' => 1513083627
+                'modified' => 1513083626
             ],
             'particles/totop' => [
                 'file' => 'user/themes/g5_helium/config/default/particles/totop.yaml',
-                'modified' => 1513083627
+                'modified' => 1513083626
             ]
         ]
     ],
     'data' => [
         'particles' => [
+            'custom_contentcubes.html' => [
+                'caching' => [
+                    'type' => 'static'
+                ]
+            ],
+            'detail_homestay' => [
+                'caching' => [
+                    'type' => 'static'
+                ],
+                'enabled' => true
+            ],
             'contentcubes' => [
                 'caching' => [
                     'type' => 'static'
@@ -236,6 +255,18 @@ return [
             'aboutUs' => [
                 'enabled' => true
             ],
+            'custom_contentcubes' => [
+                'html' => [
+                    'enabled' => true
+                ]
+            ],
+            'scrollreveal-js' => [
+                'enabled' => true,
+                'mobile' => 'false'
+            ],
+            'services' => [
+                'enabled' => true
+            ],
             'analytics' => [
                 'enabled' => true,
                 'ua' => [
@@ -372,11 +403,11 @@ return [
                 'text-color' => '#424753'
             ],
             'font' => [
-                'family-default' => 'Raleway, Helvetica, Tahoma, Geneva, Arial, sans-serif',
-                'family-title' => 'Lato, Helvetica, Tahoma, Geneva, Arial, sans-serif'
+                'family-default' => 'Tahoma',
+                'family-title' => 'Tahoma'
             ],
             'footer' => [
-                'background' => '#312f38',
+                'background' => '#424753',
                 'text-color' => '#ffffff'
             ],
             'header' => [
@@ -398,8 +429,8 @@ return [
                 'animation' => 'g-fade'
             ],
             'navigation' => [
-                'background' => '#312f38',
-                'text-color' => '#ffffff'
+                'background' => '#f4f5f7',
+                'text-color' => '#424753'
             ],
             'offcanvas' => [
                 'background' => '#4db2b3',
@@ -435,6 +466,69 @@ return [
                 'doctype' => 'html',
                 'body_top' => '',
                 'body_bottom' => ''
+            ],
+            'assets' => [
+                'favicon' => '',
+                'touchicon' => '',
+                'css' => [
+                    
+                ],
+                'javascript' => [
+                    
+                ]
+            ],
+            'head' => [
+                'meta' => [
+                    
+                ],
+                'head_bottom' => '',
+                'atoms' => [
+                    0 => [
+                        'id' => 'scrollreveal-js-6769',
+                        'type' => 'scrollreveal-js',
+                        'title' => 'ScrollReveal.js',
+                        'attributes' => [
+                            'enabled' => '1',
+                            'mobile' => 'false'
+                        ]
+                    ],
+                    1 => [
+                        'id' => 'assets-7229',
+                        'type' => 'assets',
+                        'title' => 'Custom CSS / JS',
+                        'attributes' => [
+                            'enabled' => '1',
+                            'css' => [
+                                
+                            ],
+                            'javascript' => [
+                                0 => [
+                                    'location' => 'gantry-assets://assets/scrollReveal.min.js',
+                                    'inline' => '',
+                                    'in_footer' => '0',
+                                    'extra' => [
+                                        
+                                    ],
+                                    'priority' => '0',
+                                    'name' => 'scrollReveal'
+                                ],
+                                1 => [
+                                    'location' => 'gantry-assets://assets/click.js',
+                                    'inline' => '',
+                                    'in_footer' => '0',
+                                    'extra' => [
+                                        
+                                    ],
+                                    'priority' => '0',
+                                    'name' => 'click'
+                                ],
+                                2 => [
+                                    'name' => 'New item'
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
             ]
         ],
         'pages' => [
@@ -504,7 +598,7 @@ return [
         ],
         'index' => [
             'name' => '_error',
-            'timestamp' => 1512364778,
+            'timestamp' => 1513088398,
             'version' => 7,
             'preset' => [
                 'image' => 'gantry-admin://images/layouts/default.png',

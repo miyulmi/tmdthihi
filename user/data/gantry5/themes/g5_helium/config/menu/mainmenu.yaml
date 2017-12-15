@@ -19,20 +19,22 @@ items:
     enabled: true
     anchor_class: ''
   dang-bai:
-    enabled: true
-    anchor_class: ''
+    enabled: '0'
+    dropdown_dir: right
+    dropdown_hide: '0'
+    width: auto
   nguoi-dung:
     columns:
       - 100
-    enabled: true
-    anchor_class: ''
-  nguoi-dung/dang-ky:
     enabled: true
     anchor_class: ''
   nguoi-dung/dang-nhap:
     enabled: true
     anchor_class: ''
   nguoi-dung/ho-so:
+    enabled: true
+    anchor_class: ''
+  nguoi-dung/dang-ky:
     enabled: true
     anchor_class: ''
   styles/__particle-2IjaB:

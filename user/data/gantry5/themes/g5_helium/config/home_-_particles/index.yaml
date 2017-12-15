@@ -1,5 +1,5 @@
 name: home_-_particles
-timestamp: 1512988957
+timestamp: 1513302812
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -20,36 +20,24 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  logo:
-    logo-9608: 'Logo / Image'
-    logo-6231: 'Logo / Image'
   menu:
     menu-6409: Menu
   owlcarousel:
     owlcarousel-2455: 'Owl Carousel'
-  custom:
-    custom-5807: Intro
-    custom-3119: Features
-    custom-7658: 'Customer Testimonials'
-    custom-6355: 'Develop CMS themes quickly'
-  contenttabs:
-    contenttabs-3854: 'Content Tabs'
+  services:
+    services-3526: 'HS Bac'
+    services-5875: 'HS Trung'
+    services-9663: 'HS Nam'
   contentcubes:
     contentcubes-7850: 'Content Cubes'
+    contentcubes-6226: 'Content Cubes'
   copyright:
-    copyright-5116: Copyright
-  horizontalmenu:
-    horizontalmenu-9937: 'Horizontal Menu'
+    copyright-1736: Copyright
   totop:
-    totop-5629: 'To Top'
+    totop-8670: 'To Top'
   mobile-menu:
     mobile-menu-1622: Mobile-menu
 inherit:
   default:
-    footer: footer
-    logo-6231: logo-9571
-    copyright-5116: copyright-1736
-    horizontalmenu-9937: horizontalmenu-9034
-    totop-5629: totop-8670
     offcanvas: offcanvas
     mobile-menu-1622: mobile-menu-5697

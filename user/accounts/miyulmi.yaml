@@ -1,16 +1,25 @@
 email: walkhomestay@gmail.com
-fullname: 'Vu My'
-title: miyulmi
+fullname: 'Walk Homestay'
+title: Walk
 state: enabled
 access:
   admin:
     super: 'true'
     login: 'true'
+    configuration_system: 'true'
+    plugins: 'true'
+    themes: 'true'
+    users: 'true'
   site:
     login: 'true'
-hashed_password: $2y$10$Nx4A.Ic0SvIRTm6bJQoi.OA3vbyJIir/3sVQSqnh71wAX4IvFF7XG
-reset: 'ddbd58d99220473a722308dbe4f9c129::1513777785'
 language: en
-login_attempts: {  }
-twofa_secret: CG3Y2TNJQYKSIQXEVSOLDA7EQWT33MQ2
+twofa_secret: 6UXKRBVGIB6CR6P4KE3NJ4PFWHPR4BYW
 twofa_enabled: false
+hashed_password: $2y$10$SBUMfxfhnuQbFITY3r.TWe05d83lfYiY0IiTRUoyI.k4LgFcpOOOK
+login_attempts: {  }
+avatar:
+  user/accounts/avatars/5clUYKjS36eh9bE.jpg:
+    name: 5clUYKjS36eh9bE.jpg
+    type: image/jpeg
+    size: 103655
+    path: user/accounts/avatars/5clUYKjS36eh9bE.jpg

@@ -1,11 +1,12 @@
 #grav-login{
     max-width: 34em !important;
 }
+.form-label{
+    font-weight: 550;
+}
 form{
     text-align: left;
-    label, .form-label{
-        font-weight: 550;
-    }
+  
     .form-field{
         margin-bottom: 15px;
     }
@@ -16,14 +17,20 @@ border-radius: 15px !important;
  .secondary-accent{
      
     .secondary{
-   
+        @include breakpoint(mobile-only){
+            width: 18em;
+            height: 60px;
+        }
         width: 34em;
         text-align: center;
     }
     .primary{
+        @include breakpoint(mobile-only){
+            width: 18em;
+            height: 60px;
+        }
         width: 34em;
         text-align: center;
       }
      
  }
- 

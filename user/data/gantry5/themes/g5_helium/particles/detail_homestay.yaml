@@ -1,0 +1,123 @@
+name: Detail homestay
+description: 
+type: particle
+icon: fa-home
+
+configuration:
+  caching:
+    type: static
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable the particle.
+      default: true
+
+    css.class:
+      type: input.text
+      label: CSS Classes
+      description: CSS class name for the particle.
+
+    .title:
+          type: input.text
+          label: Title
+          description: Enter the name homestay
+
+    .style:
+          type: input.text
+          label: Style
+          description: Enter the style homestay
+    .desc_style:
+          type: input.text
+          label: Description style
+          description: Enter the description style homestay
+    .image:
+          type: input.imagepicker
+          label: Image
+          description: Select desired image.      
+    desc_homestay:
+      type: collection.list
+      array: true
+      label: Description Homestay
+      description: Create each item to display.
+      value: name
+      ajax: true
+
+      fields:
+        .name:
+          type: input.text
+        .desc:
+          type: input.text
+          label: Description Homestay
+          description: Enter the style homestay
+        .image:
+          type: input.imagepicker
+          label: Image
+          description: Select desired image.         
+    room:
+      type: collection.list
+      array: true
+      label: Room Homestay
+      description: Create each item to display.
+      value: name
+      ajax: true
+
+      fields:
+        .name:
+          type: input.text
+          label: Name
+          description: Enter the style homestay
+        .style:
+          type: input.text
+          label: Style room
+          description: Enter the style homestay
+        .desc_room:
+          type: input.text
+          label: Description Room
+          description: Enter the description room homestay 
+
+        .quantity_room:
+          type: input.number
+          label: Quantity
+          description: Enter the quantity room homestay 
+        .image:
+          type: input.imagepicker
+          label: Image
+          description: Select desired image.
+         
+        .tags:
+          type: collection.list
+          array: true
+          label: Tags
+          description: Create each tag to display.
+          value: text
+          ajax: true
+
+          fields:
+            .text:
+              type: input.text
+              label: Tag Text
+              description: Input the text to be used as tag.
+            .icon:
+              type: input.icon
+              label: Tag Icon
+              description: Input the icon.
+              default: 'fa fa-tag'
+            .link:
+              type: input.text
+              label: Tag Link
+              description: Specify the tag link.
+            .target:
+              type: select.selectize
+              label: Target
+              description: Target browser window when item is clicked.
+              placeholder: 'Select...'
+              default: _self
+              options:
+                  _self: Self
+                  _blank: New Window
+
+        
+       

@@ -1,0 +1,21 @@
+meta: {  }
+head_bottom: ''
+atoms:
+  -
+    id: scrollreveal-js-6769
+    type: scrollreveal-js
+    title: ScrollReveal.js
+    attributes:
+      enabled: '1'
+      mobile: 'false'
+  -
+    id: assets-7229
+    type: assets
+    title: 'Custom CSS / JS'
+    attributes:
+      enabled: '1'
+      css: {  }
+      javascript:
+        - { location: 'gantry-assets://assets/scrollReveal.min.js', inline: '', in_footer: '0', extra: {  }, priority: '0', name: scrollReveal }
+        - { location: 'gantry-assets://assets/click.js', inline: '', in_footer: '0', extra: {  }, priority: '0', name: click }
+        - { name: 'New item' }

@@ -1,0 +1,215 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1468340932
+layout:
+  navigation: {  }
+  header: {  }
+  /intro/:
+    -
+      - detail_homestay-6477
+  /features/:
+    -
+      - contenttabs-8156
+    -
+      - 'contentcubes-4014 50'
+      - 'contentcubes-2734 50'
+    -
+      - 'contentcubes-1319 50'
+      - 'contentcubes-7135 50'
+  utility: {  }
+  above: {  }
+  testimonials: {  }
+  expanded: {  }
+  /container-main/:
+    -
+      -
+        'mainbar 75': {  }
+      -
+        'sidebar 25': {  }
+  footer: {  }
+  offcanvas: {  }
+structure:
+  navigation:
+    type: section
+    inherit:
+      outline: list_homestay
+      include:
+        - attributes
+        - block
+        - children
+  header:
+    inherit:
+      outline: list_homestay
+      include:
+        - attributes
+        - block
+        - children
+  intro:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+  features:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+  utility:
+    type: section
+    inherit:
+      outline: full_width
+      include:
+        - attributes
+        - block
+        - children
+  above:
+    type: section
+    inherit:
+      outline: list_homestay
+      include:
+        - attributes
+        - block
+        - children
+  testimonials:
+    type: section
+    inherit:
+      outline: full_width
+      include:
+        - attributes
+        - block
+        - children
+  expanded:
+    type: section
+    inherit:
+      outline: full_width
+      include:
+        - attributes
+        - block
+        - children
+  mainbar:
+    type: section
+    subtype: main
+    inherit:
+      outline: list_homestay
+      include:
+        - attributes
+        - block
+        - children
+  sidebar:
+    type: section
+    subtype: aside
+    inherit:
+      outline: list_homestay
+      include:
+        - attributes
+        - block
+        - children
+  container-main:
+    attributes:
+      boxed: ''
+      class: ''
+      extra: {  }
+  footer:
+    inherit:
+      outline: home_-_particles
+      include:
+        - attributes
+        - children
+  offcanvas:
+    inherit:
+      outline: list_homestay
+      include:
+        - attributes
+        - block
+        - children
+content:
+  detail_homestay-6477:
+    title: 'Detail homestay'
+    attributes:
+      title: 'Home Of Dreamer'
+      style: Vintage
+      desc_style: 'Với phong cách tự nhiên,phóng khoáng mang đến cho Home Of Dreamer một không gian thoải mái, dễ chịu, thu hút khách du lịch'
+      image: 'gantry-media://22490045_1527498954005767_24712777554088265_n.jpg'
+      desc_homestay:
+        -
+          desc: 'Homestay này ở Nam Hồ, cách hồ Xuân Hương 3 km. Ở đây có nhiều loại phòng: phòng đôi, phòng nhóm và giường dorm. Giá cho phòng đôi dao động khoảng 500.000-700.000 đồng, giường dorm có giá 150.000 đồng/giường. '
+          image: 'gantry-media://hs3.jpg'
+          name: dreamer1
+        -
+          desc: 'Ngủ một đêm trong căn phòng đôi này, bạn cần bỏ ra khoảng 550.000 đồng. Nó được ví von với nhiều tên gọi: khách sạn ngàn sao, nhà nghỉ lộ thiên, thậm chí nhà bạt! Bạn sẽ được hòa mình cùng thiên nhiên, thỏa thích ngắm mây vờn trên bầu trời trong vắt, mơ màng trong ánh đèn đêm phát ra từ những nhà kính trồng hoa'
+          image: 'gantry-media://hs2.jpg'
+          name: dreamer2
+      room:
+        -
+          style: Vintage
+          desc_room: 'Home Of Dreamer mang phong cách vintage,. Phòng nhỏ, không khí ấm áp, thích hợp cho cặp đôi và các bạn nữ'
+          quantity_room: '2'
+          image: 'gantry-media://18157396_330389614042156_6762520093257196736_n.jpg'
+          name: 'Home Of Dreamer'
+  contenttabs-8156:
+    title: 'Content Tabs'
+    attributes:
+      items:
+        -
+          title: 'HomeStay cùng khu vực'
+  contentcubes-4014:
+    title: hien
+    attributes:
+      items:
+        -
+          image: 'gantry-media://947337_1216222558395461_3660895225269412471_n.jpg'
+          imageposition: left
+          label: ''
+          title: Hiên
+          link: ''
+          linktext: '&rarr;'
+          buttonclass: ''
+          buttontarget: _self
+          name: hien
+  contentcubes-2734:
+    title: otaku
+    attributes:
+      items:
+        -
+          image: 'gantry-media://89542190.jpg'
+          imageposition: left
+          label: ''
+          title: 'Osaku Village  Homestay'
+          link: ''
+          linktext: '&rarr;'
+          buttonclass: ''
+          buttontarget: _self
+          name: Soc
+  contentcubes-1319:
+    title: wine
+    attributes:
+      items:
+        -
+          image: 'gantry-media://wine-valley-homestay-da-lat-ivivu-11-1495510286615.jpg'
+          imageposition: left
+          label: ''
+          title: 'Wine Homestay'
+          link: ''
+          linktext: '&rarr;'
+          buttonclass: ''
+          buttontarget: _self
+          name: Wine
+  contentcubes-7135:
+    title: soc
+    attributes:
+      css:
+        class: ''
+      title: ''
+      items:
+        -
+          image: 'gantry-media://hs1.jpg'
+          imageposition: left
+          label: ''
+          title: 'Sóc HomeStay'
+          link: ''
+          linktext: '&rarr;'
+          buttonclass: ''
+          buttontarget: _self
+          name: Soc

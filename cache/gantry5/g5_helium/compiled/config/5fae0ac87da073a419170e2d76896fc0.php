@@ -1,13 +1,17 @@
 <?php
 return [
     '@class' => 'Gantry\\Component\\Config\\CompiledConfig',
-    'timestamp' => 1513169739,
-    'checksum' => 'de2803f794203f80391f4043a7d46227',
+    'timestamp' => 1513302524,
+    'checksum' => 'd8006a28d2e378a9d40e5d073f50ddb6',
     'files' => [
         0 => [
             'block_variations' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/block_variations/assignments.yaml',
                 'modified' => 1513088398
+            ],
+            'detail_homestay' => [
+                'file' => 'user/data/gantry5/themes/g5_helium/config/detail_homestay/assignments.yaml',
+                'modified' => 1513264596
             ],
             'full_width' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/full_width/assignments.yaml',
@@ -27,7 +31,7 @@ return [
             ],
             'list_homestay' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/list_homestay/assignments.yaml',
-                'modified' => 1513088398
+                'modified' => 1513249436
             ],
             'offline_page' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/offline_page/assignments.yaml',
@@ -69,6 +73,19 @@ return [
                 0 => [
                     'features/block-variations' => 1
                 ]
+            ]
+        ],
+        'detail_homestay' => [
+            'page' => [
+                0 => [
+                    'thong-tin-homestay' => true
+                ]
+            ],
+            'language' => [
+                
+            ],
+            'type' => [
+                
             ]
         ],
         'full_width' => [

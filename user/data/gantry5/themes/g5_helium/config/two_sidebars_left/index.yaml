@@ -1,5 +1,5 @@
 name: two_sidebars_left
-timestamp: 1512988448
+timestamp: 1513301755
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -28,15 +28,12 @@ particles:
     custom-9374: 'Flexible Layouts'
     custom-4266: Lipsum
     custom-5490: Content
-  logo:
-    logo-2768: 'Logo / Image'
-    logo-5400: 'Logo / Image'
   menu:
     menu-7832: Menu
+  logo:
+    logo-5400: 'Logo / Image'
   copyright:
     copyright-1479: Copyright
-  horizontalmenu:
-    horizontalmenu-3533: 'Horizontal Menu'
   totop:
     totop-8693: 'To Top'
   mobile-menu:
@@ -46,10 +43,8 @@ inherit:
     navigation: navigation
     footer: footer
     offcanvas: offcanvas
-    logo-2768: logo-9608
     menu-7832: menu-6409
     logo-5400: logo-9571
     copyright-1479: copyright-1736
-    horizontalmenu-3533: horizontalmenu-9034
     totop-8693: totop-8670
     mobile-menu-8893: mobile-menu-5697

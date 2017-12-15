@@ -6,10 +6,23 @@
 // Demo Styling
 @import "helium/styles/helium-style";
 
+// Content Cubes
+@import "helium/styles/contentcubes";
 
+//Detail_HomeStay
+@import "helium/styles/detail_homestay";
 //-------------------------------------------
 
 // SECTIONS STYLING
 @import "helium/sections/login";
+
+@import "helium/sections/banner";
+
+@import "helium/sections/service";
+
+//partiles styling
+@import "helium/particles/menu";
+
+@import "helium/particles/detail";
 
 

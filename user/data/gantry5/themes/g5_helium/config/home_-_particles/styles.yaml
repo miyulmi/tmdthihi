@@ -1,5 +1,9 @@
 preset: preset1
+base:
+  background: '#ffffff'
+  text-color: '#1f4199'
+font:
+  family-default: Tahoma
+  family-title: Tahoma
 navigation:
-  background: '#312f38'
-header:
-  background: '#312f38'
+  background: '#f4f5f7'

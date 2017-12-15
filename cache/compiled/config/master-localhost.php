@@ -1,63 +1,71 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1513174235,
-    'checksum' => '1118710b68b855accff7316bf45bc75f',
+    'timestamp' => 1513302524,
+    'checksum' => '0890d249ef09d016c0f9d711416c9180',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
-                'modified' => 1513083619
+                'modified' => 1513083618
             ],
             'plugins/email' => [
                 'file' => 'user/config/plugins/email.yaml',
                 'modified' => 1513174234
             ],
+            'plugins/gantry5' => [
+                'file' => 'user/config/plugins/gantry5.yaml',
+                'modified' => 1513225052
+            ],
             'plugins/login' => [
                 'file' => 'user/config/plugins/login.yaml',
                 'modified' => 1513140314
             ],
+            'plugins/pagination' => [
+                'file' => 'user/config/plugins/pagination.yaml',
+                'modified' => 1513262842
+            ],
             'security' => [
                 'file' => 'user/config/security.yaml',
-                'modified' => 1513083619
+                'modified' => 1513083618
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1513083619
+                'modified' => 1513182462
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
-                'modified' => 1513083619
+                'modified' => 1513083618
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1513169727
+                'modified' => 1513302517
             ],
             'themes/afterburner2' => [
                 'file' => 'user/config/themes/afterburner2.yaml',
-                'modified' => 1513142831
+                'modified' => 1513142830
             ],
             'themes/twenty' => [
                 'file' => 'user/config/themes/twenty.yaml',
-                'modified' => 1513144009
+                'modified' => 1513144008
             ]
         ],
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1513143835
+                'modified' => 1513143834
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1513143835
+                'modified' => 1513143834
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1513143835
+                'modified' => 1513143834
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1513143835
+                'modified' => 1513143834
             ]
         ],
         'user/plugins' => [
@@ -71,7 +79,7 @@ return [
             ],
             'plugins/blog-injector' => [
                 'file' => 'user/plugins/blog-injector/blog-injector.yaml',
-                'modified' => 1513141695
+                'modified' => 1513141694
             ],
             'plugins/breadcrumbs' => [
                 'file' => 'user/plugins/breadcrumbs/breadcrumbs.yaml',
@@ -83,7 +91,7 @@ return [
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
-                'modified' => 1513083623
+                'modified' => 1513083622
             ],
             'plugins/feed' => [
                 'file' => 'user/plugins/feed/feed.yaml',
@@ -99,7 +107,7 @@ return [
             ],
             'plugins/gravstrap' => [
                 'file' => 'user/plugins/gravstrap/gravstrap.yaml',
-                'modified' => 1513141665
+                'modified' => 1513141664
             ],
             'plugins/highlight' => [
                 'file' => 'user/plugins/highlight/highlight.yaml',
@@ -111,19 +119,19 @@ return [
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1513083627
+                'modified' => 1513083626
             ],
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/markdown-notices.yaml',
-                'modified' => 1513083627
+                'modified' => 1513083626
             ],
             'plugins/pagination' => [
                 'file' => 'user/plugins/pagination/pagination.yaml',
-                'modified' => 1513083627
+                'modified' => 1513083626
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
-                'modified' => 1513083627
+                'modified' => 1513083626
             ],
             'plugins/relatedpages' => [
                 'file' => 'user/plugins/relatedpages/relatedpages.yaml',
@@ -131,11 +139,11 @@ return [
             ],
             'plugins/shortcode-core' => [
                 'file' => 'user/plugins/shortcode-core/shortcode-core.yaml',
-                'modified' => 1513141675
+                'modified' => 1513141674
             ],
             'plugins/simplesearch' => [
                 'file' => 'user/plugins/simplesearch/simplesearch.yaml',
-                'modified' => 1513083627
+                'modified' => 1513083626
             ],
             'plugins/taxonomylist' => [
                 'file' => 'user/plugins/taxonomylist/taxonomylist.yaml',
@@ -292,7 +300,7 @@ return [
             ],
             'gantry5' => [
                 'enabled' => true,
-                'production' => true,
+                'production' => false,
                 'use_media_folder' => false,
                 'offline' => false,
                 'offline_message' => NULL,
@@ -729,18 +737,18 @@ return [
             ]
         ],
         'site' => [
-            'title' => 'Grav',
+            'title' => 'Walk',
             'default_lang' => 'en',
             'author' => [
-                'name' => 'Joe Bloggs',
-                'email' => 'joe@test.com'
+                'name' => 'Walk Homestay',
+                'email' => 'walkhomestay@gmail.com'
             ],
             'taxonomies' => [
                 0 => 'category',
                 1 => 'tag'
             ],
             'metadata' => [
-                'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+                'description' => 'Provide homestay \'s information throughout the country'
             ],
             'summary' => [
                 'enabled' => true,
@@ -831,7 +839,7 @@ return [
                     'twig' => true
                 ],
                 'markdown' => [
-                    'extra' => false,
+                    'extra' => true,
                     'auto_line_breaks' => false,
                     'auto_url_links' => false,
                     'escape_markup' => false,
@@ -856,7 +864,7 @@ return [
                 'etag' => false,
                 'vary_accept_encoding' => false,
                 'redirect_default_route' => false,
-                'redirect_default_code' => 302,
+                'redirect_default_code' => '302',
                 'redirect_trailing_slash' => true,
                 'ignore_files' => [
                     0 => '.DS_Store'
@@ -917,18 +925,18 @@ return [
                 ]
             ],
             'errors' => [
-                'display' => 0,
+                'display' => '0',
                 'log' => true
             ],
             'debugger' => [
-                'enabled' => false,
+                'enabled' => true,
                 'shutdown' => [
                     'close_connection' => true
                 ]
             ],
             'images' => [
-                'default_image_quality' => 85,
-                'cache_all' => false,
+                'default_image_quality' => 100,
+                'cache_all' => true,
                 'cache_perms' => '0755',
                 'debug' => false,
                 'auto_fix_orientation' => false

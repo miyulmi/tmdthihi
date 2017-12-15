@@ -1,35 +1,47 @@
 <?php
 return [
     '@class' => 'Gantry\\Component\\Config\\CompiledConfig',
-    'timestamp' => 1513169772,
-    'checksum' => '48c4a0908ce3f0e409b40552ee5dcb70',
+    'timestamp' => 1513302816,
+    'checksum' => '5e2b8ed8761ab1a6f9f39a78a158b84e',
     'files' => [
         'user/data/gantry5/themes/g5_helium/config/list_homestay' => [
             'assignments' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/list_homestay/assignments.yaml',
-                'modified' => 1513088398
+                'modified' => 1513249436
             ],
             'index' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/list_homestay/index.yaml',
-                'modified' => 1513088398
+                'modified' => 1513302812
             ],
             'layout' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/list_homestay/layout.yaml',
-                'modified' => 1513088398
+                'modified' => 1513302812
+            ],
+            'styles' => [
+                'file' => 'user/data/gantry5/themes/g5_helium/config/list_homestay/styles.yaml',
+                'modified' => 1513276132
             ]
         ],
         'user/data/gantry5/themes/g5_helium/config/default' => [
             'index' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/index.yaml',
-                'modified' => 1513088398
+                'modified' => 1513301755
             ],
             'layout' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/layout.yaml',
-                'modified' => 1513088398
+                'modified' => 1513301755
+            ],
+            'page/assets' => [
+                'file' => 'user/data/gantry5/themes/g5_helium/config/default/page/assets.yaml',
+                'modified' => 1513302384
             ],
             'page/body' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/page/body.yaml',
-                'modified' => 1513088398
+                'modified' => 1513302384
+            ],
+            'page/head' => [
+                'file' => 'user/data/gantry5/themes/g5_helium/config/default/page/head.yaml',
+                'modified' => 1513302384
             ],
             'particles/branding' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/particles/branding.yaml',
@@ -53,38 +65,49 @@ return [
             ],
             'styles' => [
                 'file' => 'user/data/gantry5/themes/g5_helium/config/default/styles.yaml',
-                'modified' => 1513088398
+                'modified' => 1513267412
             ]
         ],
         'user/themes/g5_helium/config/default' => [
             'page/body' => [
                 'file' => 'user/themes/g5_helium/config/default/page/body.yaml',
-                'modified' => 1513083627
+                'modified' => 1513083626
             ],
             'particles/branding' => [
                 'file' => 'user/themes/g5_helium/config/default/particles/branding.yaml',
-                'modified' => 1513083627
+                'modified' => 1513083626
             ],
             'particles/copyright' => [
                 'file' => 'user/themes/g5_helium/config/default/particles/copyright.yaml',
-                'modified' => 1513083627
+                'modified' => 1513083626
             ],
             'particles/logo' => [
                 'file' => 'user/themes/g5_helium/config/default/particles/logo.yaml',
-                'modified' => 1513083627
+                'modified' => 1513083626
             ],
             'particles/social' => [
                 'file' => 'user/themes/g5_helium/config/default/particles/social.yaml',
-                'modified' => 1513083627
+                'modified' => 1513083626
             ],
             'particles/totop' => [
                 'file' => 'user/themes/g5_helium/config/default/particles/totop.yaml',
-                'modified' => 1513083627
+                'modified' => 1513083626
             ]
         ]
     ],
     'data' => [
         'particles' => [
+            'custom_contentcubes.html' => [
+                'caching' => [
+                    'type' => 'static'
+                ]
+            ],
+            'detail_homestay' => [
+                'caching' => [
+                    'type' => 'static'
+                ],
+                'enabled' => true
+            ],
             'contentcubes' => [
                 'caching' => [
                     'type' => 'static'
@@ -240,6 +263,18 @@ return [
             'aboutUs' => [
                 'enabled' => true
             ],
+            'custom_contentcubes' => [
+                'html' => [
+                    'enabled' => true
+                ]
+            ],
+            'scrollreveal-js' => [
+                'enabled' => true,
+                'mobile' => 'false'
+            ],
+            'services' => [
+                'enabled' => true
+            ],
             'analytics' => [
                 'enabled' => true,
                 'ua' => [
@@ -376,11 +411,11 @@ return [
                 'text-color' => '#424753'
             ],
             'font' => [
-                'family-default' => 'Raleway, Helvetica, Tahoma, Geneva, Arial, sans-serif',
-                'family-title' => 'Lato, Helvetica, Tahoma, Geneva, Arial, sans-serif'
+                'family-default' => 'Tahoma',
+                'family-title' => 'Tahoma'
             ],
             'footer' => [
-                'background' => '#312f38',
+                'background' => '#424753',
                 'text-color' => '#ffffff'
             ],
             'header' => [
@@ -402,8 +437,8 @@ return [
                 'animation' => 'g-fade'
             ],
             'navigation' => [
-                'background' => '#312f38',
-                'text-color' => '#ffffff'
+                'background' => '#f4f5f7',
+                'text-color' => '#424753'
             ],
             'offcanvas' => [
                 'background' => '#4db2b3',
@@ -439,6 +474,69 @@ return [
                 'doctype' => 'html',
                 'body_top' => '',
                 'body_bottom' => ''
+            ],
+            'assets' => [
+                'favicon' => '',
+                'touchicon' => '',
+                'css' => [
+                    
+                ],
+                'javascript' => [
+                    
+                ]
+            ],
+            'head' => [
+                'meta' => [
+                    
+                ],
+                'head_bottom' => '',
+                'atoms' => [
+                    0 => [
+                        'id' => 'scrollreveal-js-6769',
+                        'type' => 'scrollreveal-js',
+                        'title' => 'ScrollReveal.js',
+                        'attributes' => [
+                            'enabled' => '1',
+                            'mobile' => 'false'
+                        ]
+                    ],
+                    1 => [
+                        'id' => 'assets-7229',
+                        'type' => 'assets',
+                        'title' => 'Custom CSS / JS',
+                        'attributes' => [
+                            'enabled' => '1',
+                            'css' => [
+                                
+                            ],
+                            'javascript' => [
+                                0 => [
+                                    'location' => 'gantry-assets://assets/scrollReveal.min.js',
+                                    'inline' => '',
+                                    'in_footer' => '0',
+                                    'extra' => [
+                                        
+                                    ],
+                                    'priority' => '0',
+                                    'name' => 'scrollReveal'
+                                ],
+                                1 => [
+                                    'location' => 'gantry-assets://assets/click.js',
+                                    'inline' => '',
+                                    'in_footer' => '0',
+                                    'extra' => [
+                                        
+                                    ],
+                                    'priority' => '0',
+                                    'name' => 'click'
+                                ],
+                                2 => [
+                                    'name' => 'New item'
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
             ]
         ],
         'pages' => [
@@ -508,7 +606,7 @@ return [
         ],
         'index' => [
             'name' => 'list_homestay',
-            'timestamp' => 1512988447,
+            'timestamp' => 1513302812,
             'version' => 7,
             'preset' => [
                 'image' => 'gantry-admin://images/layouts/default.png',
@@ -516,7 +614,7 @@ return [
                 'timestamp' => 1468340932
             ],
             'positions' => [
-                'sidebar' => 'Sidebar'
+                
             ],
             'sections' => [
                 'navigation' => 'Navigation',
@@ -533,59 +631,40 @@ return [
                 'offcanvas' => 'Offcanvas'
             ],
             'particles' => [
-                'logo' => [
-                    'logo-4939' => 'Logo / Image',
-                    'logo-2777' => 'Logo / Image'
-                ],
                 'menu' => [
-                    'menu-2188' => 'Menu'
+                    'menu-6409' => 'Menu'
                 ],
-                'position' => [
-                    'position-position-2897' => 'Sidebar'
+                'search' => [
+                    'search-4005' => 'Search'
+                ],
+                'contenttabs' => [
+                    'contenttabs-8156' => 'Content Tabs'
+                ],
+                'contentcubes' => [
+                    'contentcubes-7135' => 'Content Cubes',
+                    'contentcubes-2734' => 'Content Cubes',
+                    'contentcubes-1319' => 'Content Cubes',
+                    'contentcubes-4014' => 'Content Cubes',
+                    'contentcubes-9878' => 'Content Cubes',
+                    'contentcubes-2545' => 'Content Cubes'
                 ],
                 'copyright' => [
-                    'copyright-2047' => 'Copyright'
-                ],
-                'horizontalmenu' => [
-                    'horizontalmenu-4228' => 'Horizontal Menu'
+                    'copyright-9462' => 'Copyright'
                 ],
                 'totop' => [
-                    'totop-8585' => 'To Top'
-                ],
-                'mobile-menu' => [
-                    'mobile-menu-9429' => 'Mobile-menu'
-                ],
-                'custom' => [
-                    'custom-4070' => 'Header',
-                    'custom-7081' => 'Content'
+                    'totop-4216' => 'To Top'
                 ]
             ],
             'inherit' => [
-                'default' => [
-                    'navigation' => 'navigation',
-                    'sidebar' => 'sidebar',
-                    'footer' => 'footer',
-                    'offcanvas' => 'offcanvas',
-                    'logo-4939' => 'logo-9608',
-                    'menu-2188' => 'menu-6409',
-                    'position-position-2897' => 'position-position-3949',
-                    'logo-2777' => 'logo-9571',
-                    'copyright-2047' => 'copyright-1736',
-                    'horizontalmenu-4228' => 'horizontalmenu-9034',
-                    'totop-8585' => 'totop-8670',
-                    'mobile-menu-9429' => 'mobile-menu-5697'
-                ],
                 'full_width' => [
-                    'header' => 'header',
-                    'intro' => 'intro',
-                    'features' => 'features',
                     'utility' => 'utility',
-                    'above' => 'above',
                     'testimonials' => 'testimonials',
-                    'expanded' => 'expanded',
-                    'mainbar' => 'mainbar',
-                    'custom-4070' => 'custom-9029',
-                    'custom-7081' => 'custom-7890'
+                    'expanded' => 'expanded'
+                ],
+                'home_-_particles' => [
+                    'footer' => 'footer',
+                    'copyright-9462' => 'copyright-1736',
+                    'totop-4216' => 'totop-8670'
                 ]
             ]
         ],
@@ -597,22 +676,39 @@ return [
                 'timestamp' => 1468340932
             ],
             'layout' => [
-                'navigation' => [
+                '/navigation/' => [
+                    0 => [
+                        0 => 'menu-6409 65',
+                        1 => 'search-4005 35'
+                    ]
+                ],
+                '/header/' => [
                     
                 ],
-                'header' => [
+                '/intro/' => [
                     
                 ],
-                'intro' => [
-                    
-                ],
-                'features' => [
-                    
+                '/features/' => [
+                    0 => [
+                        0 => 'contenttabs-8156'
+                    ],
+                    1 => [
+                        0 => 'contentcubes-7135 50',
+                        1 => 'contentcubes-2734 50'
+                    ],
+                    2 => [
+                        0 => 'contentcubes-1319 50',
+                        1 => 'contentcubes-4014 50'
+                    ],
+                    3 => [
+                        0 => 'contentcubes-9878 50',
+                        1 => 'contentcubes-2545 50'
+                    ]
                 ],
                 'utility' => [
                     
                 ],
-                'above' => [
+                '/above/' => [
                     
                 ],
                 'testimonials' => [
@@ -645,44 +741,29 @@ return [
             'structure' => [
                 'navigation' => [
                     'type' => 'section',
-                    'inherit' => [
-                        'outline' => 'default',
-                        'include' => [
-                            0 => 'attributes',
-                            1 => 'children'
-                        ]
+                    'attributes' => [
+                        'boxed' => '',
+                        'class' => ''
                     ]
                 ],
                 'header' => [
-                    'inherit' => [
-                        'outline' => 'full_width',
-                        'include' => [
-                            0 => 'attributes',
-                            1 => 'block',
-                            2 => 'children'
-                        ]
+                    'attributes' => [
+                        'boxed' => '',
+                        'class' => ''
                     ]
                 ],
                 'intro' => [
                     'type' => 'section',
-                    'inherit' => [
-                        'outline' => 'full_width',
-                        'include' => [
-                            0 => 'attributes',
-                            1 => 'block',
-                            2 => 'children'
-                        ]
+                    'attributes' => [
+                        'boxed' => '',
+                        'class' => ''
                     ]
                 ],
                 'features' => [
                     'type' => 'section',
-                    'inherit' => [
-                        'outline' => 'full_width',
-                        'include' => [
-                            0 => 'attributes',
-                            1 => 'block',
-                            2 => 'children'
-                        ]
+                    'attributes' => [
+                        'boxed' => '',
+                        'class' => ''
                     ]
                 ],
                 'utility' => [
@@ -698,13 +779,9 @@ return [
                 ],
                 'above' => [
                     'type' => 'section',
-                    'inherit' => [
-                        'outline' => 'full_width',
-                        'include' => [
-                            0 => 'attributes',
-                            1 => 'block',
-                            2 => 'children'
-                        ]
+                    'attributes' => [
+                        'boxed' => '1',
+                        'class' => ''
                     ]
                 ],
                 'testimonials' => [
@@ -732,91 +809,187 @@ return [
                 'mainbar' => [
                     'type' => 'section',
                     'subtype' => 'main',
-                    'inherit' => [
-                        'outline' => 'full_width',
-                        'include' => [
-                            0 => 'attributes',
-                            1 => 'block',
-                            2 => 'children'
-                        ]
+                    'attributes' => [
+                        'class' => ''
                     ]
                 ],
                 'sidebar' => [
                     'type' => 'section',
                     'subtype' => 'aside',
-                    'inherit' => [
-                        'outline' => 'default',
-                        'include' => [
-                            0 => 'block',
-                            1 => 'attributes',
-                            2 => 'children'
-                        ]
+                    'attributes' => [
+                        'class' => ''
                     ]
                 ],
                 'container-main' => [
                     'attributes' => [
-                        'boxed' => ''
+                        'boxed' => '',
+                        'class' => '',
+                        'extra' => [
+                            
+                        ]
                     ]
                 ],
                 'footer' => [
                     'inherit' => [
-                        'outline' => 'default',
+                        'outline' => 'home_-_particles',
                         'include' => [
-                            0 => 'children',
-                            1 => 'attributes'
+                            0 => 'attributes',
+                            1 => 'children'
                         ]
                     ]
                 ],
                 'offcanvas' => [
-                    'inherit' => [
-                        'outline' => 'default',
-                        'include' => [
-                            0 => 'children',
-                            1 => 'attributes'
-                        ]
+                    'attributes' => [
+                        'position' => 'g-offcanvas-left',
+                        'class' => '',
+                        'extra' => [
+                            
+                        ],
+                        'swipe' => '1',
+                        'css3animation' => '1'
                     ]
                 ]
             ],
             'content' => [
-                'logo-9608' => [
-                    'title' => 'Logo / Image'
-                ],
-                'position-position-3949' => [
-                    'title' => 'Sidebar',
-                    'attributes' => [
-                        'key' => 'sidebar'
-                    ]
-                ],
-                'logo-9571' => [
-                    'title' => 'Logo / Image',
-                    'attributes' => [
-                        'svg' => '<svg width="100%" height="100%" viewBox="0 0 30 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><path id="logo-footer" d="M14.937,0.096l14.882,7.044l0,18.089l-14.882,7.044l-14.883,-7.044l0,-18.089l14.883,-7.044ZM25.412,18.086c0.024,-0.138 0.046,-0.324 0.064,-0.556c0.018,-0.233 0.027,-0.469 0.027,-0.708c0,-0.654 -0.091,-1.267 -0.275,-1.839c-0.183,-0.572 -0.455,-1.066 -0.815,-1.481c-0.361,-0.414 -0.797,-0.741 -1.311,-0.98c-0.513,-0.239 -1.099,-0.359 -1.759,-0.359c-0.758,0 -1.421,0.135 -1.989,0.406c-0.568,0.27 -1.045,0.638 -1.43,1.103c-0.384,0.466 -0.675,1.013 -0.87,1.641c-0.196,0.629 -0.293,1.302 -0.293,2.019c0,0.729 0.094,1.402 0.284,2.018c0.189,0.616 0.482,1.147 0.879,1.594c0.398,0.446 0.911,0.795 1.54,1.047c0.629,0.251 1.384,0.377 2.264,0.377c1.197,0 2.272,-0.189 3.226,-0.566c-0.013,-0.402 -0.068,-0.779 -0.165,-1.132c-0.098,-0.352 -0.214,-0.654 -0.349,-0.905c-0.391,0.151 -0.803,0.267 -1.237,0.349c-0.434,0.082 -0.858,0.123 -1.274,0.123c-0.757,0 -1.368,-0.17 -1.833,-0.51c-0.464,-0.339 -0.721,-0.886 -0.769,-1.641l6.085,0ZM11.995,16.275l0,5.867c0.452,0.075 0.904,0.113 1.356,0.113c0.428,0 0.874,-0.038 1.338,-0.113l0,-13.563c-0.464,-0.075 -0.916,-0.113 -1.356,-0.113c-0.44,0 -0.886,0.038 -1.338,0.113l0,5.32l-4.417,0l0,-5.32c-0.465,-0.075 -0.917,-0.113 -1.357,-0.113c-0.439,0 -0.885,0.038 -1.338,0.113l0,13.563c0.453,0.075 0.905,0.113 1.357,0.113c0.427,0 0.873,-0.038 1.338,-0.113l0,-5.867l4.417,0ZM23.047,16.219l-3.702,0c0.061,-0.642 0.25,-1.138 0.568,-1.49c0.318,-0.353 0.782,-0.529 1.393,-0.529c0.538,0 0.956,0.186 1.256,0.557c0.299,0.371 0.461,0.858 0.485,1.462Z"/></svg>'
-                    ]
-                ],
-                'horizontalmenu-9034' => [
-                    'title' => 'Horizontal Menu',
+                'contenttabs-8156' => [
+                    'title' => 'Content Tabs',
                     'attributes' => [
                         'items' => [
                             0 => [
-                                'text' => 'Gantry',
-                                'link' => 'http://gantry.org',
-                                'name' => 'Gantry'
-                            ],
-                            1 => [
-                                'text' => 'Documentation',
-                                'link' => 'http://docs.gantry.org',
-                                'name' => 'Documentation'
-                            ],
-                            2 => [
-                                'text' => 'Download',
-                                'link' => 'http://gantry.org/downloads',
-                                'name' => 'Download'
+                                'title' => 'Danh sách HomeStay Miền Bắc'
                             ]
                         ]
                     ]
                 ],
-                'totop-8670' => [
-                    'title' => 'To Top'
+                'contentcubes-7135' => [
+                    'title' => 'Content Cubes',
+                    'attributes' => [
+                        'css' => [
+                            'class' => ''
+                        ],
+                        'title' => '',
+                        'items' => [
+                            0 => [
+                                'image' => 'gantry-media://hs1.jpg',
+                                'imageposition' => 'left',
+                                'label' => '',
+                                'title' => 'Sóc HomeStay',
+                                'tags' => [
+                                    
+                                ],
+                                'link' => '',
+                                'linktext' => '&rarr;',
+                                'buttonclass' => '',
+                                'buttontarget' => '_self',
+                                'name' => 'Soc'
+                            ]
+                        ]
+                    ]
+                ],
+                'contentcubes-2734' => [
+                    'title' => 'Content Cubes',
+                    'attributes' => [
+                        'items' => [
+                            0 => [
+                                'image' => 'gantry-media://hs3.jpg',
+                                'imageposition' => 'left',
+                                'label' => '',
+                                'title' => 'Home Of Dreamer',
+                                'tags' => [
+                                    
+                                ],
+                                'link' => '/t/thong-tin-homestay',
+                                'linktext' => '',
+                                'buttonclass' => '',
+                                'buttontarget' => '_self',
+                                'name' => 'homeofdreamer'
+                            ]
+                        ]
+                    ]
+                ],
+                'contentcubes-1319' => [
+                    'title' => 'Content Cubes',
+                    'attributes' => [
+                        'items' => [
+                            0 => [
+                                'image' => 'gantry-media://wine-valley-homestay-da-lat-ivivu-11-1495510286615.jpg',
+                                'imageposition' => 'left',
+                                'label' => '',
+                                'title' => 'Wine Homestay',
+                                'tags' => [
+                                    
+                                ],
+                                'link' => '',
+                                'linktext' => '&rarr;',
+                                'buttonclass' => '',
+                                'buttontarget' => '_self',
+                                'name' => 'Wine'
+                            ]
+                        ]
+                    ]
+                ],
+                'contentcubes-4014' => [
+                    'title' => 'Content Cubes',
+                    'attributes' => [
+                        'items' => [
+                            0 => [
+                                'image' => 'gantry-media://947337_1216222558395461_3660895225269412471_n.jpg',
+                                'imageposition' => 'left',
+                                'label' => '',
+                                'title' => 'Hiên',
+                                'tags' => [
+                                    
+                                ],
+                                'link' => '',
+                                'linktext' => '&rarr;',
+                                'buttonclass' => '',
+                                'buttontarget' => '_self',
+                                'name' => 'hien'
+                            ]
+                        ]
+                    ]
+                ],
+                'contentcubes-9878' => [
+                    'title' => 'Content Cubes',
+                    'attributes' => [
+                        'items' => [
+                            0 => [
+                                'image' => 'gantry-media://au-frais-07073110.jpg',
+                                'imageposition' => 'left',
+                                'label' => '',
+                                'title' => 'Quê Hương Homestay',
+                                'tags' => [
+                                    
+                                ],
+                                'link' => '',
+                                'linktext' => '&rarr;',
+                                'buttonclass' => '',
+                                'buttontarget' => '_self',
+                                'name' => 'Que'
+                            ]
+                        ]
+                    ]
+                ],
+                'contentcubes-2545' => [
+                    'title' => 'Content Cubes',
+                    'attributes' => [
+                        'items' => [
+                            0 => [
+                                'image' => 'gantry-media://moc-chau-moc-31.jpg',
+                                'imageposition' => 'left',
+                                'label' => '',
+                                'title' => 'Lạc Homestay',
+                                'tags' => [
+                                    
+                                ],
+                                'link' => '',
+                                'linktext' => '&rarr;',
+                                'buttonclass' => '',
+                                'buttontarget' => '_self',
+                                'name' => 'Lac'
+                            ]
+                        ]
+                    ]
                 ]
             ]
         ],

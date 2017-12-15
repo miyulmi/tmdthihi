@@ -2,7 +2,7 @@
 return [
     '@class' => 'Gantry\\Component\\File\\CompiledYamlFile',
     'filename' => 'gantry-admin://translations/en/platform.yaml',
-    'modified' => 1513083625,
+    'modified' => 1513083624,
     'data' => [
         'GANTRY5_PARTICLE_MENU_INFO' => 'Menu particle is designed to be used in certain sections only and may need extra styling in order to look correct in another location.',
         'GANTRY5_PLATFORM_OOPS' => 'Oops',

@@ -1,0 +1,36 @@
+name: Services 
+description:
+type: particle
+
+
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description:
+      default: true
+    title:
+      type: input.text
+      label: Title
+    
+    css.class:
+      type: input.selectize
+      label: CSS Classes
+      description: CSS class name for the particle.
+     
+
+    icon:
+          type: input.icon
+          label: Icon
+
+    description:
+          type: input.text
+          label: Description
+
+    route:
+          type: input.text
+          lable: Route
+  
+

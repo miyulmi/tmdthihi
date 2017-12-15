@@ -1,5 +1,5 @@
 name: post
-timestamp: 1512988448
+timestamp: 1513301755
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -21,17 +21,14 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  logo:
-    logo-2118: 'Logo / Image'
-    logo-1516: 'Logo / Image'
   menu:
     menu-4368: Menu
   position:
     position-position-4199: Sidebar
+  logo:
+    logo-1516: 'Logo / Image'
   copyright:
     copyright-2373: Copyright
-  horizontalmenu:
-    horizontalmenu-8870: 'Horizontal Menu'
   totop:
     totop-2242: 'To Top'
   mobile-menu:
@@ -45,12 +42,10 @@ inherit:
     sidebar: sidebar
     footer: footer
     offcanvas: offcanvas
-    logo-2118: logo-9608
     menu-4368: menu-6409
     position-position-4199: position-position-3949
     logo-1516: logo-9571
     copyright-2373: copyright-1736
-    horizontalmenu-8870: horizontalmenu-9034
     totop-2242: totop-8670
     mobile-menu-9487: mobile-menu-5697
   full_width:

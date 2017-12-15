@@ -1,17 +1,17 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledLanguages',
-    'timestamp' => 1513169744,
-    'checksum' => '16fa564710899b26324a00bb4b99dc9c',
+    'timestamp' => 1513302532,
+    'checksum' => '1d65b74428cb937d62ea2e80cbe8f05c',
     'files' => [
         'system/languages' => [
             'ar' => [
                 'file' => 'system/languages/ar.yaml',
-                'modified' => 1513143835
+                'modified' => 1513143834
             ],
             'ca' => [
                 'file' => 'system/languages/ca.yaml',
-                'modified' => 1513143835
+                'modified' => 1513143834
             ],
             'cs' => [
                 'file' => 'system/languages/cs.yaml',
@@ -121,7 +121,7 @@ return [
         'user/plugins' => [
             'plugins/blog-injector' => [
                 'file' => 'user/plugins/blog-injector/languages.yaml',
-                'modified' => 1513141695
+                'modified' => 1513141694
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/languages.yaml',
@@ -129,15 +129,15 @@ return [
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/languages.yaml',
-                'modified' => 1513083623
+                'modified' => 1513083622
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/languages.yaml',
-                'modified' => 1513143963
+                'modified' => 1513143962
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/languages.yaml',
-                'modified' => 1513083627
+                'modified' => 1513083626
             ],
             'plugins/relatedpages' => [
                 'file' => 'user/plugins/relatedpages/languages.yaml',
@@ -145,7 +145,7 @@ return [
             ],
             'plugins/simplesearch' => [
                 'file' => 'user/plugins/simplesearch/languages.yaml',
-                'modified' => 1513083627
+                'modified' => 1513083626
             ]
         ],
         'user/plugins/admin/languages' => [
@@ -18347,7 +18347,7 @@ Path: `%2$s`
                 6 => 'søndag'
             ]
         ],
-        'checksum' => '16fa564710899b26324a00bb4b99dc9c',
-        'timestamp' => 1513169744
+        'checksum' => '1d65b74428cb937d62ea2e80cbe8f05c',
+        'timestamp' => 1513302532
     ]
 ];

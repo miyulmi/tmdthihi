@@ -1,0 +1,31 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+
+<div class="g-detail-homestay {{ particle.css.class }}">
+    <h2 class="g-title-dh">{{ particle.title|raw }}</h2>
+    <p class = "desc_style">{{particle.desc_style|raw}}</p>
+    <img src="{{ url(particle.image)|e }}" alt="{{ particle.title|e }}" class="img-homestay-dh img-responsive" />
+  
+    {% if particle.desc_homestay %}
+
+            {% for item in particle.desc_homestay %}
+                        
+                 <div class="item_desc">
+                    {% if item.desc %}
+                        <p>{{item.desc|e}}</p>
+                    {% endif %}
+                    {% if item.image %}
+                        <div class="cube-image-wrapper ">
+                            <img src="{{ url(item.image)|e }}" alt="{{ item.title|e }}" class="cube-image img-responsive" />
+                               
+                        </div>
+                    {% endif %}
+                </div>
+            {% endfor %}
+
+        </div>
+    {% endif %}
+</div>
+
+{% endblock %}

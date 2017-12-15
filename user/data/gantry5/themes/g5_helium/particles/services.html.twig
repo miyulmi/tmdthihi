@@ -1,0 +1,29 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+{% block section %}
+<div class="g-grid">
+        <div class="g-block size-100">
+{% block particle %}
+
+
+
+<div class="fp-features {{particle.css.class}}">
+    <div class="g-grid">
+        <div class="g-block ">
+            <div class="card">
+                <div class="card-block">
+                   <a href="{{particle.route}}"> <i class="{{particle.icon}}"></i>
+                    <h4 class="card-title">{{particle.title}}</h4>
+                    <p class="card-text">{{particle.description|raw}}</p></a>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+{% endblock %}
+        </div>
+</div>
+{% endblock %}
+
+
